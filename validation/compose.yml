@@ -31,6 +31,8 @@ services:
       - ../wordpress/dog-seo:/var/www/html/wp-content/themes/dog-seo:ro
       - ../wordpress/comparison-template.html:/fixtures/comparison.html:ro
       - ./seed.sh:/fixtures/seed.sh:ro
+      - ./phase3-seed.sh:/fixtures/phase3-seed.sh:ro
+      - ../content/articles:/phase3:ro
     networks: [isolated]
     depends_on:
       db: {condition: service_healthy}

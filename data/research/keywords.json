@@ -1,0 +1,350 @@
+[
+  {
+    "id": "kw-01",
+    "keyword": "犬 留守番 ペットカメラ 選び方",
+    "intent": "課題解決→比較",
+    "intent_evidence": "語句に基づく編集仮説。実SERPは未確認",
+    "purchase_intent": "中",
+    "purchase_evidence": "比較・費用・型番などの語句からの定性評価。成約実績ではない",
+    "competition": {
+      "status": "unmeasured",
+      "observed_urls": [],
+      "difficulty": null,
+      "reason": "検索ページは取得したが検索結果本文なし。ブラウザも証明書信頼エラーで未取得。順位・難易度を判定しない。",
+      "planned_review": [
+        "公式メーカーの掲載有無",
+        "大手比較メディア・ECの掲載有無",
+        "個人サイトが答えていない疑問",
+        "更新日・実機検証・比較条件"
+      ],
+      "candidate_classes_to_compare": [
+        "公式メーカー",
+        "EC商品ページ",
+        "比較メディア",
+        "個人の実機レビュー"
+      ]
+    },
+    "monthly_search_volume": null,
+    "volume_source": null,
+    "outline": [
+      "留守番時の確認事項",
+      "録画と通知",
+      "購入前チェック"
+    ],
+    "priority": 1,
+    "serp_checked_on": null
+  },
+  {
+    "id": "kw-02",
+    "keyword": "ペットカメラ 月額なし",
+    "intent": "費用条件の比較",
+    "intent_evidence": "語句に基づく編集仮説。実SERPは未確認",
+    "purchase_intent": "高",
+    "purchase_evidence": "比較・費用・型番などの語句からの定性評価。成約実績ではない",
+    "competition": {
+      "status": "unmeasured",
+      "observed_urls": [],
+      "difficulty": null,
+      "reason": "検索ページは取得したが検索結果本文なし。ブラウザも証明書信頼エラーで未取得。順位・難易度を判定しない。",
+      "planned_review": [
+        "公式メーカーの掲載有無",
+        "大手比較メディア・ECの掲載有無",
+        "個人サイトが答えていない疑問",
+        "更新日・実機検証・比較条件"
+      ],
+      "candidate_classes_to_compare": [
+        "公式メーカー",
+        "EC商品ページ",
+        "比較メディア",
+        "個人の実機レビュー"
+      ]
+    },
+    "monthly_search_volume": null,
+    "volume_source": null,
+    "outline": [
+      "本体代と継続費用",
+      "ローカル保存",
+      "無料条件の確認"
+    ],
+    "priority": 1,
+    "serp_checked_on": null
+  },
+  {
+    "id": "kw-03",
+    "keyword": "ペットカメラ 録画 SDカード",
+    "intent": "録画方式を比較",
+    "intent_evidence": "語句に基づく編集仮説。実SERPは未確認",
+    "purchase_intent": "高",
+    "purchase_evidence": "比較・費用・型番などの語句からの定性評価。成約実績ではない",
+    "competition": {
+      "status": "unmeasured",
+      "observed_urls": [],
+      "difficulty": null,
+      "reason": "検索ページは取得したが検索結果本文なし。ブラウザも証明書信頼エラーで未取得。順位・難易度を判定しない。",
+      "planned_review": [
+        "公式メーカーの掲載有無",
+        "大手比較メディア・ECの掲載有無",
+        "個人サイトが答えていない疑問",
+        "更新日・実機検証・比較条件"
+      ],
+      "candidate_classes_to_compare": [
+        "公式メーカー",
+        "EC商品ページ",
+        "比較メディア",
+        "個人の実機レビュー"
+      ]
+    },
+    "monthly_search_volume": null,
+    "volume_source": null,
+    "outline": [
+      "ライブ映像と録画の違い",
+      "保存先",
+      "カード費用・上書き"
+    ],
+    "priority": 1,
+    "serp_checked_on": null
+  },
+  {
+    "id": "kw-04",
+    "keyword": "ペットカメラ 通知 犬",
+    "intent": "通知の条件確認",
+    "intent_evidence": "語句に基づく編集仮説。実SERPは未確認",
+    "purchase_intent": "中",
+    "purchase_evidence": "比較・費用・型番などの語句からの定性評価。成約実績ではない",
+    "competition": {
+      "status": "unmeasured",
+      "observed_urls": [],
+      "difficulty": null,
+      "reason": "検索ページは取得したが検索結果本文なし。ブラウザも証明書信頼エラーで未取得。順位・難易度を判定しない。",
+      "planned_review": [
+        "公式メーカーの掲載有無",
+        "大手比較メディア・ECの掲載有無",
+        "個人サイトが答えていない疑問",
+        "更新日・実機検証・比較条件"
+      ],
+      "candidate_classes_to_compare": [
+        "公式メーカー",
+        "EC商品ページ",
+        "比較メディア",
+        "個人の実機レビュー"
+      ]
+    },
+    "monthly_search_volume": null,
+    "volume_source": null,
+    "outline": [
+      "通知対象",
+      "検出と識別の違い",
+      "設定と留守番ケア"
+    ],
+    "priority": 2,
+    "serp_checked_on": null
+  },
+  {
+    "id": "kw-05",
+    "keyword": "ペットカメラ Wi-Fi 5GHz",
+    "intent": "通信互換性確認",
+    "intent_evidence": "語句に基づく編集仮説。実SERPは未確認",
+    "purchase_intent": "中",
+    "purchase_evidence": "比較・費用・型番などの語句からの定性評価。成約実績ではない",
+    "competition": {
+      "status": "unmeasured",
+      "observed_urls": [],
+      "difficulty": null,
+      "reason": "検索ページは取得したが検索結果本文なし。ブラウザも証明書信頼エラーで未取得。順位・難易度を判定しない。",
+      "planned_review": [
+        "公式メーカーの掲載有無",
+        "大手比較メディア・ECの掲載有無",
+        "個人サイトが答えていない疑問",
+        "更新日・実機検証・比較条件"
+      ],
+      "candidate_classes_to_compare": [
+        "公式メーカー",
+        "EC商品ページ",
+        "比較メディア",
+        "個人の実機レビュー"
+      ]
+    },
+    "monthly_search_volume": null,
+    "volume_source": null,
+    "outline": [
+      "ルーターの帯域",
+      "対応規格",
+      "設置前の確認"
+    ],
+    "priority": 2,
+    "serp_checked_on": null
+  },
+  {
+    "id": "kw-06",
+    "keyword": "ペットカメラ 双方向音声",
+    "intent": "機能条件で比較",
+    "intent_evidence": "語句に基づく編集仮説。実SERPは未確認",
+    "purchase_intent": "中",
+    "purchase_evidence": "比較・費用・型番などの語句からの定性評価。成約実績ではない",
+    "competition": {
+      "status": "unmeasured",
+      "observed_urls": [],
+      "difficulty": null,
+      "reason": "検索ページは取得したが検索結果本文なし。ブラウザも証明書信頼エラーで未取得。順位・難易度を判定しない。",
+      "planned_review": [
+        "公式メーカーの掲載有無",
+        "大手比較メディア・ECの掲載有無",
+        "個人サイトが答えていない疑問",
+        "更新日・実機検証・比較条件"
+      ],
+      "candidate_classes_to_compare": [
+        "公式メーカー",
+        "EC商品ページ",
+        "比較メディア",
+        "個人の実機レビュー"
+      ]
+    },
+    "monthly_search_volume": null,
+    "volume_source": null,
+    "outline": [
+      "音声の使い方",
+      "犬の反応",
+      "通信環境の確認"
+    ],
+    "priority": 2,
+    "serp_checked_on": null
+  },
+  {
+    "id": "kw-07",
+    "keyword": "ペットカメラ クラウド録画 料金",
+    "intent": "維持費・プラン検討",
+    "intent_evidence": "語句に基づく編集仮説。実SERPは未確認",
+    "purchase_intent": "高",
+    "purchase_evidence": "比較・費用・型番などの語句からの定性評価。成約実績ではない",
+    "competition": {
+      "status": "unmeasured",
+      "observed_urls": [],
+      "difficulty": null,
+      "reason": "検索ページは取得したが検索結果本文なし。ブラウザも証明書信頼エラーで未取得。順位・難易度を判定しない。",
+      "planned_review": [
+        "公式メーカーの掲載有無",
+        "大手比較メディア・ECの掲載有無",
+        "個人サイトが答えていない疑問",
+        "更新日・実機検証・比較条件"
+      ],
+      "candidate_classes_to_compare": [
+        "公式メーカー",
+        "EC商品ページ",
+        "比較メディア",
+        "個人の実機レビュー"
+      ]
+    },
+    "monthly_search_volume": null,
+    "volume_source": null,
+    "outline": [
+      "保存期間",
+      "対象台数",
+      "契約更新・解約条件"
+    ],
+    "priority": 2,
+    "serp_checked_on": null
+  },
+  {
+    "id": "kw-08",
+    "keyword": "Tapo C200 C210 違い",
+    "intent": "型番比較",
+    "intent_evidence": "語句に基づく編集仮説。実SERPは未確認",
+    "purchase_intent": "高",
+    "purchase_evidence": "比較・費用・型番などの語句からの定性評価。成約実績ではない",
+    "competition": {
+      "status": "unmeasured",
+      "observed_urls": [],
+      "difficulty": null,
+      "reason": "検索ページは取得したが検索結果本文なし。ブラウザも証明書信頼エラーで未取得。順位・難易度を判定しない。",
+      "planned_review": [
+        "公式メーカーの掲載有無",
+        "大手比較メディア・ECの掲載有無",
+        "個人サイトが答えていない疑問",
+        "更新日・実機検証・比較条件"
+      ],
+      "candidate_classes_to_compare": [
+        "公式メーカー",
+        "EC商品ページ",
+        "比較メディア",
+        "個人の実機レビュー"
+      ]
+    },
+    "monthly_search_volume": null,
+    "volume_source": null,
+    "outline": [
+      "国内型番の確認",
+      "公式仕様の同条件比較"
+    ],
+    "priority": 2,
+    "serp_checked_on": null
+  },
+  {
+    "id": "kw-09",
+    "keyword": "Tapo C220 C225 比較",
+    "intent": "型番比較",
+    "intent_evidence": "語句に基づく編集仮説。実SERPは未確認",
+    "purchase_intent": "高",
+    "purchase_evidence": "比較・費用・型番などの語句からの定性評価。成約実績ではない",
+    "competition": {
+      "status": "unmeasured",
+      "observed_urls": [],
+      "difficulty": null,
+      "reason": "検索ページは取得したが検索結果本文なし。ブラウザも証明書信頼エラーで未取得。順位・難易度を判定しない。",
+      "planned_review": [
+        "公式メーカーの掲載有無",
+        "大手比較メディア・ECの掲載有無",
+        "個人サイトが答えていない疑問",
+        "更新日・実機検証・比較条件"
+      ],
+      "candidate_classes_to_compare": [
+        "公式メーカー",
+        "EC商品ページ",
+        "比較メディア",
+        "個人の実機レビュー"
+      ]
+    },
+    "monthly_search_volume": null,
+    "volume_source": null,
+    "outline": [
+      "公式情報の取得",
+      "必要な機能と費用の比較"
+    ],
+    "priority": 2,
+    "serp_checked_on": null
+  },
+  {
+    "id": "kw-10",
+    "keyword": "犬 留守番 カメラ 注意点",
+    "intent": "安全・運用課題の解決",
+    "intent_evidence": "語句に基づく編集仮説。実SERPは未確認",
+    "purchase_intent": "低〜中",
+    "purchase_evidence": "比較・費用・型番などの語句からの定性評価。成約実績ではない",
+    "competition": {
+      "status": "unmeasured",
+      "observed_urls": [],
+      "difficulty": null,
+      "reason": "検索ページは取得したが検索結果本文なし。ブラウザも証明書信頼エラーで未取得。順位・難易度を判定しない。",
+      "planned_review": [
+        "公式メーカーの掲載有無",
+        "大手比較メディア・ECの掲載有無",
+        "個人サイトが答えていない疑問",
+        "更新日・実機検証・比較条件"
+      ],
+      "candidate_classes_to_compare": [
+        "公式メーカー",
+        "EC商品ページ",
+        "比較メディア",
+        "個人の実機レビュー"
+      ]
+    },
+    "monthly_search_volume": null,
+    "volume_source": null,
+    "outline": [
+      "設置場所",
+      "プライバシー",
+      "機器だけに頼らない運用"
+    ],
+    "priority": 2,
+    "serp_checked_on": null
+  }
+]

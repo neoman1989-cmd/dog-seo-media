@@ -116,6 +116,16 @@ def inspect(article, products, previous=()):
             if age < 0 or age > 30: errors.append("商品情報の確認日が期限外: " + pid)
         except ValueError:
             if not (p.get("demo") and article.get("mode") == "mock"): errors.append("商品情報の確認日が未設定: " + pid)
+    if article.get('mode') != 'mock':
+        from .content import release_report
+        try:
+            manifest_id = article['manifest_id']
+            if not re.fullmatch(r'[a-z0-9-]+', manifest_id): raise ValueError('Invalid manifest ID')
+            manifest = json.loads((Path('content/manifests') / (manifest_id + '.json')).read_text())
+            release = release_report(article, manifest, products)
+            if not release['publishable']: errors.extend(release['errors'])
+        except (KeyError, OSError, ValueError, TypeError):
+            errors.append('出典と本文の整合性を検証できる記事構成がありません')
     for old in previous:
         if SequenceMatcher(None, text, plain(old.get("content", ""))).ratio() >= .85:
             errors.append("既存記事との重複が疑われます"); break
@@ -150,7 +160,7 @@ def post_draft(article, products, state, mode="mock"):
     payload = {"title":article["title"], "content":article["content"], "status":"draft"}
     headers = None
     if mode != 'mock':
-        if mode != 'live' or article.get('mode') != 'live': raise ValueError('Only live articles may reach WordPress')
+        if mode != 'live' or article.get('mode') not in ('live','research'): raise ValueError('Only source-checked articles may reach WordPress')
         if not secure_url(destination): raise ValueError('WP_URL must be HTTPS without embedded credentials')
         user, password = os.getenv('WP_USER'), os.getenv('WP_APP_PASSWORD')
         if not user or not password: raise ValueError('WordPress application password and user are required')
@@ -189,12 +199,13 @@ def main():
     from .state import State, initialize, git_checkpoint
     from .budget import Budget
     parser = argparse.ArgumentParser()
-    parser.add_argument('command', choices=('init-state','generate','approve','post'))
+    parser.add_argument('command', choices=('init-state','generate','import-article','approve','post'))
     parser.add_argument('--mode', choices=('mock','live'), default='mock')
     parser.add_argument('--state', default='.state/ledger.json')
     parser.add_argument('--state-git-dir')
     parser.add_argument('--budget-config')
     parser.add_argument('--article')
+    parser.add_argument('--products', default='data/products.json')
     parser.add_argument('--output', default='output')
     args = parser.parse_args()
     if args.command == 'init-state':
@@ -202,7 +213,7 @@ def main():
     if args.state_git_dir and Path(args.state).resolve() != (Path(args.state_git_dir) / '.state/ledger.json').resolve():
         parser.error('Git checkpoint must persist the exact state file at .state/ledger.json')
     state = State(args.state, git_checkpoint(args.state_git_dir) if args.state_git_dir else None)
-    products = json.loads(Path('data/products.json').read_text())
+    products = json.loads(Path(args.products).read_text())
     output = Path(args.output); output.mkdir(parents=True, exist_ok=True)
     with state.locked():
         if args.command == 'generate':
@@ -217,7 +228,16 @@ def main():
         else:
             if not args.article: parser.error('--article is required')
             article = json.loads(Path(args.article).read_text())
-            if args.command == 'approve':
+            if args.command == 'import-article':
+                digest = article_hash(article)
+                if digest in state.data['articles']:
+                    print('Already imported; skipped'); return
+                report = inspect(article, products, [entry['article'] for entry in state.data['articles'].values()])
+                if not report['passed']: raise ValueError('Source or quality gate failed')
+                state.data['articles'][digest] = {'article': article, 'report': report, 'origin': 'source_checked_import'}
+                state.save()
+                print('Imported; separate approval required')
+            elif args.command == 'approve':
                 if not inspect(article, products)['passed']: raise ValueError('Quality gate failed')
                 print(approve_article(article, state))
             else:

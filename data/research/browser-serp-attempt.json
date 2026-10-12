@@ -1,0 +1,7 @@
+{
+  "keyword_id": "kw-02",
+  "status": "tls_trust_error",
+  "error": "net::ERR_CERT_AUTHORITY_INVALID",
+  "tls_verification_disabled": false,
+  "attempted_on": "2026-10-12"
+}

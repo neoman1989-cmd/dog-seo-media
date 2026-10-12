@@ -1,0 +1,21 @@
+{
+  "enabled": false,
+  "search_console": {
+    "site_url": null,
+    "scope": "https://www.googleapis.com/auth/webmasters.readonly",
+    "credential_storage": "secure_environment_only",
+    "retention_days": 90
+  },
+  "ga4": {
+    "measurement_id": null,
+    "property_id": null,
+    "read_scope": "https://www.googleapis.com/auth/analytics.readonly",
+    "tracking_enabled": false,
+    "consent_required": true,
+    "exclude_preview_and_admin": true
+  },
+  "events": ["page_view", "official_outbound_click"],
+  "affiliate_tracking_enabled": false,
+  "automatic_rewrite": false,
+  "monthly_external_budget_jpy": 3000
+}

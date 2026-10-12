@@ -1,0 +1,565 @@
+[
+  {
+    "id": "tapo-c200",
+    "name": "Tapo C200（V5表示ページ）",
+    "category": "ペットカメラ",
+    "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c200/",
+    "official_link_status": "confirmed_official",
+    "attempted_on": "2026-10-12",
+    "verified_on": "2026-10-12",
+    "status": "official_text_reviewed",
+    "facts": {
+      "resolution": {
+        "status": "verified",
+        "value": "1080p（1920×1080px）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c200/",
+        "text_file": "data/evidence/tapo-c200.txt",
+        "sha256": "2484662dfddddd2255c9faef4fa714db5e5896f5d98d44c66cdff43a5f18dd36",
+        "quote": "最大解像度 1080p（1920×1080px） フレームレート",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "aee8d5c82ae4509e7ff71b8d4852b5ca7fa89924773e93b351c5fbe9542a07c5"
+      },
+      "recording": {
+        "status": "verified",
+        "value": "microSDカードスロット（最大512GB/カードは別売り）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c200/",
+        "text_file": "data/evidence/tapo-c200.txt",
+        "sha256": "2484662dfddddd2255c9faef4fa714db5e5896f5d98d44c66cdff43a5f18dd36",
+        "quote": "ローカルストレージ microSDカードスロット（最大512GB/カードは別売り） microSDカードを使用",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "689c0bd322ecc980424683ea4c37b1d292d1ff10e5e71dc7e1c98c8f052c5277"
+      },
+      "notifications": {
+        "status": "verified",
+        "value": "システム通知 スナップショット付き通知（Tapo Care利用時） クリップ付き通知（Tapo Care利用時）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c200/",
+        "text_file": "data/evidence/tapo-c200.txt",
+        "sha256": "2484662dfddddd2255c9faef4fa714db5e5896f5d98d44c66cdff43a5f18dd36",
+        "quote": "通知 システム通知 スナップショット付き通知（Tapo Care利用時） クリップ付き通知（Tapo Care利用時） ネットワーク",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "0e1fc14d9eeb5a20c240a541b90fbd188f16d0dbf36af63c364c6ef36c12b110"
+      },
+      "monthly_service": {
+        "status": "verified",
+        "value": "Tapo Careのクラウドストレージサービス（有償）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c200/",
+        "text_file": "data/evidence/tapo-c200.txt",
+        "sha256": "2484662dfddddd2255c9faef4fa714db5e5896f5d98d44c66cdff43a5f18dd36",
+        "quote": "クラウドストレージ Tapo Careのクラウドストレージサービス（有償）",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "42817382b64e621d17910844df45f5b7f5f34bf2c0defcad99f1ecacc30a6482"
+      },
+      "price": {
+        "status": "unknown",
+        "value": null,
+        "reason": "取得した日本公式ページ本文では本体価格を確認できず。EC価格を推定・転記しない。",
+        "verified_on": null,
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c200/"
+      },
+      "wifi": {
+        "status": "verified",
+        "value": "IEEE 802.11b/g/n（2.4GHz Wi-Fi）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c200/",
+        "text_file": "data/evidence/tapo-c200.txt",
+        "sha256": "2484662dfddddd2255c9faef4fa714db5e5896f5d98d44c66cdff43a5f18dd36",
+        "quote": "Wi-Fiプロトコル IEEE 802.11b/g/n（2.4GHz Wi-Fi） RTSP",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "31d4457cd0b4050a202d849582c2fb411a5525d1983df47bbfc9d0db2ade522a"
+      },
+      "audio": {
+        "status": "verified",
+        "value": "双方向通話（ノイズキャンセリング搭載）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c200/",
+        "text_file": "data/evidence/tapo-c200.txt",
+        "sha256": "2484662dfddddd2255c9faef4fa714db5e5896f5d98d44c66cdff43a5f18dd36",
+        "quote": "音声通話 双方向通話（ノイズキャンセリング搭載） サイレン音量",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "1b2bc74fd4f03b6e73cda322e59eac8da66097238de664703525dc017a342c2e"
+      }
+    },
+    "affiliate": {
+      "status": "not_partnered",
+      "asp": null,
+      "approval_id": null,
+      "url": null
+    },
+    "missing_information": [
+      "日本向けクラウドプランの円建て料金・支払周期",
+      "国内在庫・実売価格",
+      "カードの実購入価格",
+      "メーカー希望小売価格"
+    ],
+    "source_urls": [
+      "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c200/"
+    ],
+    "scope_note": "日本公式ページの取得時表示仕様。ハードウェア版や販売地域により相違し得る。実機検証・販売在庫確認は未実施。",
+    "monthly_fee_jpy": null,
+    "monthly_fee_reason": "Tapo Care有償サービスの存在は確認。日本向けプランの円建て料金は取得本文で確認できず。",
+    "demo": false,
+    "features": [
+      "1080p（1920×1080px）",
+      "microSDカードスロット（最大512GB/カードは別売り）",
+      "双方向通話（ノイズキャンセリング搭載）"
+    ],
+    "price_yen": null,
+    "price_kind": null,
+    "affiliate_url": null
+  },
+  {
+    "id": "tapo-c210",
+    "name": "Tapo C210（V3表示ページ）",
+    "category": "ペットカメラ",
+    "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c210/",
+    "official_link_status": "confirmed_official",
+    "attempted_on": "2026-10-12",
+    "verified_on": "2026-10-12",
+    "status": "official_text_reviewed",
+    "facts": {
+      "resolution": {
+        "status": "verified",
+        "value": "2K 3MP（2304×1296px）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c210/",
+        "text_file": "data/evidence/tapo-c210.txt",
+        "sha256": "3f68be908a2e91e8da130c7a861abfa4a3a8ac16b69856e1b58e9bc388a5d50a",
+        "quote": "最大解像度 2K 3MP（2304×1296px） フレームレート",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "5ed5c5b91220cc5d84155fd9e5ca949bfb21c2235b170f3b79ceacfab1739ef1"
+      },
+      "recording": {
+        "status": "verified",
+        "value": "microSDカードスロット（最大512GB/カードは別売り）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c210/",
+        "text_file": "data/evidence/tapo-c210.txt",
+        "sha256": "3f68be908a2e91e8da130c7a861abfa4a3a8ac16b69856e1b58e9bc388a5d50a",
+        "quote": "ローカルストレージ microSDカードスロット（最大512GB/カードは別売り） microSDカードを使用",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "dc46ce7362ae70abe9393aada157aa810c78163d95287ad79159fb80adeac8c5"
+      },
+      "notifications": {
+        "status": "verified",
+        "value": "システム通知 スナップショット付き通知（Tapo Care利用時） クリップ付き通知（Tapo Care利用時）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c210/",
+        "text_file": "data/evidence/tapo-c210.txt",
+        "sha256": "3f68be908a2e91e8da130c7a861abfa4a3a8ac16b69856e1b58e9bc388a5d50a",
+        "quote": "通知 システム通知 スナップショット付き通知（Tapo Care利用時） クリップ付き通知（Tapo Care利用時） ネットワーク",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "52441d61fdb560c75cfa2a1a4722d14d4778104506bc557b8c141de4b6909d71"
+      },
+      "monthly_service": {
+        "status": "verified",
+        "value": "Tapo Careのクラウドストレージサービス（有償）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c210/",
+        "text_file": "data/evidence/tapo-c210.txt",
+        "sha256": "3f68be908a2e91e8da130c7a861abfa4a3a8ac16b69856e1b58e9bc388a5d50a",
+        "quote": "クラウドストレージ Tapo Careのクラウドストレージサービス（有償）",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "6150f930efe4178e1720de2b312f27dbe65e98ac2513bc4c07fa49654f16044f"
+      },
+      "price": {
+        "status": "unknown",
+        "value": null,
+        "reason": "取得した日本公式ページ本文では本体価格を確認できず。EC価格を推定・転記しない。",
+        "verified_on": null,
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c210/"
+      },
+      "wifi": {
+        "status": "verified",
+        "value": "IEEE 802.11b/g/n（2.4GHz Wi-Fi）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c210/",
+        "text_file": "data/evidence/tapo-c210.txt",
+        "sha256": "3f68be908a2e91e8da130c7a861abfa4a3a8ac16b69856e1b58e9bc388a5d50a",
+        "quote": "Wi-Fiプロトコル IEEE 802.11b/g/n（2.4GHz Wi-Fi） RTSP",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "07c972bdae3cf5e3a042e214f02b805d0463b56da21c77d3942ca21f61cc9224"
+      },
+      "audio": {
+        "status": "verified",
+        "value": "双方向通話（ノイズキャンセリング搭載）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c210/",
+        "text_file": "data/evidence/tapo-c210.txt",
+        "sha256": "3f68be908a2e91e8da130c7a861abfa4a3a8ac16b69856e1b58e9bc388a5d50a",
+        "quote": "音声通話 双方向通話（ノイズキャンセリング搭載） サイレン音量",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "b733c91941a4e6e6ae5106fa21ef4837848a9a4cc584579a9eb58f3fbf52bb53"
+      }
+    },
+    "affiliate": {
+      "status": "not_partnered",
+      "asp": null,
+      "approval_id": null,
+      "url": null
+    },
+    "missing_information": [
+      "日本向けクラウドプランの円建て料金・支払周期",
+      "国内在庫・実売価格",
+      "カードの実購入価格",
+      "メーカー希望小売価格"
+    ],
+    "source_urls": [
+      "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c210/"
+    ],
+    "scope_note": "日本公式ページの取得時表示仕様。ハードウェア版や販売地域により相違し得る。実機検証・販売在庫確認は未実施。",
+    "monthly_fee_jpy": null,
+    "monthly_fee_reason": "Tapo Care有償サービスの存在は確認。日本向けプランの円建て料金は取得本文で確認できず。",
+    "demo": false,
+    "features": [
+      "2K 3MP（2304×1296px）",
+      "microSDカードスロット（最大512GB/カードは別売り）",
+      "双方向通話（ノイズキャンセリング搭載）"
+    ],
+    "price_yen": null,
+    "price_kind": null,
+    "affiliate_url": null
+  },
+  {
+    "id": "tapo-c220",
+    "name": "Tapo C220",
+    "category": "ペットカメラ",
+    "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c220/",
+    "official_link_status": "confirmed_official",
+    "attempted_on": "2026-10-12",
+    "verified_on": "2026-10-12",
+    "status": "official_text_reviewed",
+    "facts": {
+      "resolution": {
+        "status": "verified",
+        "value": "2K QHD 4MP（2560×1440px）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c220/",
+        "text_file": "data/evidence/tapo-c220.txt",
+        "sha256": "0002565ef788ed883389b52fbe8cd37e370be66948a2f5a39c29ffa7d100bd0b",
+        "quote": "最大解像度 2K QHD 4MP（2560×1440px） フレームレート",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "c0058b6bbed77cb4c184554c56a7ead02a59bb29329f6de2cb452674c99f7052"
+      },
+      "recording": {
+        "status": "verified",
+        "value": "microSDカードスロット（最大512GB/カードは別売り）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c220/",
+        "text_file": "data/evidence/tapo-c220.txt",
+        "sha256": "0002565ef788ed883389b52fbe8cd37e370be66948a2f5a39c29ffa7d100bd0b",
+        "quote": "ローカルストレージ microSDカードスロット（最大512GB/カードは別売り） microSDカードを使用",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "ea9ee282507c7fd75edbdcd716f610a597a6c9275a45dee6d2d422e972fa63d7"
+      },
+      "notifications": {
+        "status": "verified",
+        "value": "システム通知 スナップショット付き通知（Tapo Care利用時）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c220/",
+        "text_file": "data/evidence/tapo-c220.txt",
+        "sha256": "0002565ef788ed883389b52fbe8cd37e370be66948a2f5a39c29ffa7d100bd0b",
+        "quote": "通知 システム通知 スナップショット付き通知（Tapo Care利用時） ネットワーク",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "d24e2caa3e6f6e1e937b235e275117ad5a06e3160643d45fe12236065256473f"
+      },
+      "monthly_service": {
+        "status": "verified",
+        "value": "Tapo Careのクラウドストレージサービス（有償）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c220/",
+        "text_file": "data/evidence/tapo-c220.txt",
+        "sha256": "0002565ef788ed883389b52fbe8cd37e370be66948a2f5a39c29ffa7d100bd0b",
+        "quote": "クラウドストレージ Tapo Careのクラウドストレージサービス（有償）",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "f0614c0bb0ebc2849eb4856c593ed7a7b599e19bb9a812cc8de01f7e71de0b8e"
+      },
+      "price": {
+        "status": "verified",
+        "value": "メーカー希望小売価格： 本体 5,880円(税込み)",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c220/",
+        "text_file": "data/evidence/tapo-c220.txt",
+        "sha256": "0002565ef788ed883389b52fbe8cd37e370be66948a2f5a39c29ffa7d100bd0b",
+        "quote": "メーカー希望小売価格： 本体 5,880円(税込み)",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式表示確認。販売価格ではなく希望小売価格）",
+        "reviewed_claim_hash": "43e2fd28fb49f5d5371d1baf3a836abc12b09588a991e96ef3bc8c755f39f52a"
+      },
+      "wifi": {
+        "status": "verified",
+        "value": "IEEE 802.11b/g/n（2.4GHz Wi-Fi）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c220/",
+        "text_file": "data/evidence/tapo-c220.txt",
+        "sha256": "0002565ef788ed883389b52fbe8cd37e370be66948a2f5a39c29ffa7d100bd0b",
+        "quote": "Wi-Fiプロトコル IEEE 802.11b/g/n（2.4GHz Wi-Fi） RTSP",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "a4c1e0b143e5e7b881de0b797a1716fe48c06247ca43824e630478a13b6d3bbc"
+      },
+      "audio": {
+        "status": "verified",
+        "value": "双方向通話（ノイズキャンセリング搭載）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c220/",
+        "text_file": "data/evidence/tapo-c220.txt",
+        "sha256": "0002565ef788ed883389b52fbe8cd37e370be66948a2f5a39c29ffa7d100bd0b",
+        "quote": "音声通話 双方向通話（ノイズキャンセリング搭載） サイレン音量",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "51615364f23f98c1088d2aaba45b632ae6d1f74ba1cfc0b01a69b052346e469f"
+      }
+    },
+    "affiliate": {
+      "status": "not_partnered",
+      "asp": null,
+      "approval_id": null,
+      "url": null
+    },
+    "missing_information": [
+      "日本向けクラウドプランの円建て料金・支払周期",
+      "国内在庫・実売価格",
+      "カードの実購入価格"
+    ],
+    "source_urls": [
+      "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c220/"
+    ],
+    "scope_note": "日本公式ページの取得時表示仕様。ハードウェア版や販売地域により相違し得る。実機検証・販売在庫確認は未実施。",
+    "monthly_fee_jpy": null,
+    "monthly_fee_reason": "Tapo Care有償サービスの存在は確認。日本向けプランの円建て料金は取得本文で確認できず。",
+    "demo": false,
+    "features": [
+      "2K QHD 4MP（2560×1440px）",
+      "microSDカードスロット（最大512GB/カードは別売り）",
+      "双方向通話（ノイズキャンセリング搭載）"
+    ],
+    "price_yen": 5880,
+    "price_kind": "manufacturer_suggested_retail",
+    "affiliate_url": null
+  },
+  {
+    "id": "tapo-c225",
+    "name": "Tapo C225",
+    "category": "ペットカメラ",
+    "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c225/",
+    "official_link_status": "confirmed_official",
+    "attempted_on": "2026-10-12",
+    "verified_on": "2026-10-12",
+    "status": "official_text_reviewed",
+    "facts": {
+      "resolution": {
+        "status": "verified",
+        "value": "2K QHD 4MP（2560×1440px）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c225/",
+        "text_file": "data/evidence/tapo-c225.txt",
+        "sha256": "d04d2c7665eb9f67e9a1fcef82dd777f2aea64341bd7dd32bc5fdfceb99b16ed",
+        "quote": "最大解像度 2K QHD 4MP（2560×1440px） フレームレート",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "fb62c47db3cd5fbe685625974e839d4e47f0a3579b6d2231106f32621f837c20"
+      },
+      "recording": {
+        "status": "verified",
+        "value": "microSDカードスロット（最大512GB/カードは別売り）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c225/",
+        "text_file": "data/evidence/tapo-c225.txt",
+        "sha256": "d04d2c7665eb9f67e9a1fcef82dd777f2aea64341bd7dd32bc5fdfceb99b16ed",
+        "quote": "ローカルストレージ microSDカードスロット（最大512GB/カードは別売り） microSDカードを使用",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "e00825d20a9e470bcacd129f85b46631e646125aa63eda365ac27f9b66b0116f"
+      },
+      "notifications": {
+        "status": "verified",
+        "value": "システム通知 スナップショット付き通知（Tapo Care利用時）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c225/",
+        "text_file": "data/evidence/tapo-c225.txt",
+        "sha256": "d04d2c7665eb9f67e9a1fcef82dd777f2aea64341bd7dd32bc5fdfceb99b16ed",
+        "quote": "通知 システム通知 スナップショット付き通知（Tapo Care利用時） ネットワーク",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "0443b022722f1c12309d2660c08804458c6c834c2697542854a809ac6ef188e5"
+      },
+      "monthly_service": {
+        "status": "verified",
+        "value": "Tapo Careのクラウドストレージサービス（有償）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c225/",
+        "text_file": "data/evidence/tapo-c225.txt",
+        "sha256": "d04d2c7665eb9f67e9a1fcef82dd777f2aea64341bd7dd32bc5fdfceb99b16ed",
+        "quote": "クラウドストレージ Tapo Careのクラウドストレージサービス（有償）",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "ed1c79555b49f1ca9293206c086a956b0bf7d564ebf9ae4ca7da70b1946f8847"
+      },
+      "price": {
+        "status": "unknown",
+        "value": null,
+        "reason": "取得した日本公式ページ本文では本体価格を確認できず。EC価格を推定・転記しない。",
+        "verified_on": null,
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c225/"
+      },
+      "wifi": {
+        "status": "verified",
+        "value": "IEEE 802.11b/g/n（2.4GHz Wi-Fi）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c225/",
+        "text_file": "data/evidence/tapo-c225.txt",
+        "sha256": "d04d2c7665eb9f67e9a1fcef82dd777f2aea64341bd7dd32bc5fdfceb99b16ed",
+        "quote": "Wi-Fiプロトコル IEEE 802.11b/g/n（2.4GHz Wi-Fi） RTSP",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "74dc88e75647314f3a323b874d71559a57cb5706b388535b19b9863f6fac7bf1"
+      },
+      "audio": {
+        "status": "verified",
+        "value": "双方向通話（ノイズキャンセリング搭載）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c225/",
+        "text_file": "data/evidence/tapo-c225.txt",
+        "sha256": "d04d2c7665eb9f67e9a1fcef82dd777f2aea64341bd7dd32bc5fdfceb99b16ed",
+        "quote": "音声通話 双方向通話（ノイズキャンセリング搭載） サイレン音量",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "230c0e2eabb4541c4583c5309d21e4b768b750c3d2946f2cc1eb63d2bb582dcf"
+      }
+    },
+    "affiliate": {
+      "status": "not_partnered",
+      "asp": null,
+      "approval_id": null,
+      "url": null
+    },
+    "missing_information": [
+      "日本向けクラウドプランの円建て料金・支払周期",
+      "国内在庫・実売価格",
+      "カードの実購入価格",
+      "メーカー希望小売価格"
+    ],
+    "source_urls": [
+      "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c225/"
+    ],
+    "scope_note": "日本公式ページの取得時表示仕様。ハードウェア版や販売地域により相違し得る。実機検証・販売在庫確認は未実施。",
+    "monthly_fee_jpy": null,
+    "monthly_fee_reason": "Tapo Care有償サービスの存在は確認。日本向けプランの円建て料金は取得本文で確認できず。",
+    "demo": false,
+    "features": [
+      "2K QHD 4MP（2560×1440px）",
+      "microSDカードスロット（最大512GB/カードは別売り）",
+      "双方向通話（ノイズキャンセリング搭載）"
+    ],
+    "price_yen": null,
+    "price_kind": null,
+    "affiliate_url": null
+  },
+  {
+    "id": "tapo-c120",
+    "name": "Tapo C120",
+    "category": "ペットカメラ",
+    "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c120/",
+    "official_link_status": "confirmed_official",
+    "attempted_on": "2026-10-12",
+    "verified_on": "2026-10-12",
+    "status": "official_text_reviewed",
+    "facts": {
+      "resolution": {
+        "status": "verified",
+        "value": "2K QHD 4MP（2560×1440px）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c120/",
+        "text_file": "data/evidence/tapo-c120.txt",
+        "sha256": "a239e751fad76e08a9e17119e2bc953075af5eb2ba1e3fbcebcd2139de31e47d",
+        "quote": "最大解像度 2K QHD 4MP（2560×1440px） フレームレート",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "f67a4960179cbd214b910d23fa249af3704f119f54b9e512b29461f878b96085"
+      },
+      "recording": {
+        "status": "verified",
+        "value": "microSDカードスロット（最大512GB/カードは別売り）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c120/",
+        "text_file": "data/evidence/tapo-c120.txt",
+        "sha256": "a239e751fad76e08a9e17119e2bc953075af5eb2ba1e3fbcebcd2139de31e47d",
+        "quote": "ローカルストレージ microSDカードスロット（最大512GB/カードは別売り） microSDカードを使用",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "d669c7c45dba366b049c8f8a60dc54d741fd14d21fd8e586e5f17b77f30e5abc"
+      },
+      "notifications": {
+        "status": "verified",
+        "value": "システム通知 スナップショット付きシステム通知（Tapo Careサービス）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c120/",
+        "text_file": "data/evidence/tapo-c120.txt",
+        "sha256": "a239e751fad76e08a9e17119e2bc953075af5eb2ba1e3fbcebcd2139de31e47d",
+        "quote": "通知 システム通知 スナップショット付きシステム通知（Tapo Careサービス） ネットワーク",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "fd3624e7996975cc54b64b54ac9c207515b60f7beb118d71d9ebf428cb443368"
+      },
+      "monthly_service": {
+        "status": "verified",
+        "value": "Tapo Careクラウドストレージ（有償）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c120/",
+        "text_file": "data/evidence/tapo-c120.txt",
+        "sha256": "a239e751fad76e08a9e17119e2bc953075af5eb2ba1e3fbcebcd2139de31e47d",
+        "quote": "クラウドストレージ Tapo Careクラウドストレージ（有償）",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "6e40a6a070d29dd046cba060f36336132d84296ca3a2f63b3e45cad9d8e4dba8"
+      },
+      "price": {
+        "status": "unknown",
+        "value": null,
+        "reason": "取得した日本公式ページ本文では本体価格を確認できず。EC価格を推定・転記しない。",
+        "verified_on": null,
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c120/"
+      },
+      "wifi": {
+        "status": "verified",
+        "value": "IEEE 802.11b/g/n（2.4GHz Wi-Fi）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c120/",
+        "text_file": "data/evidence/tapo-c120.txt",
+        "sha256": "a239e751fad76e08a9e17119e2bc953075af5eb2ba1e3fbcebcd2139de31e47d",
+        "quote": "Wi-Fiプロトコル IEEE 802.11b/g/n（2.4GHz Wi-Fi） セキュリティ",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "5b9f0072852fa4c496a8f5926141111d9ee32ff97ad175c032b3fe38af491c78"
+      },
+      "audio": {
+        "status": "verified",
+        "value": "双方向通話（ノイズキャンセリング搭載）",
+        "source_url": "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c120/",
+        "text_file": "data/evidence/tapo-c120.txt",
+        "sha256": "a239e751fad76e08a9e17119e2bc953075af5eb2ba1e3fbcebcd2139de31e47d",
+        "quote": "音声通話 双方向通話（ノイズキャンセリング搭載） サイレン音量",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式本文・文脈照合。実機未使用）",
+        "reviewed_claim_hash": "92c98e6d6a7472c4ca0fff9d1633b5eac281095b91b39fe638d6fb41f9821386"
+      }
+    },
+    "affiliate": {
+      "status": "not_partnered",
+      "asp": null,
+      "approval_id": null,
+      "url": null
+    },
+    "missing_information": [
+      "日本向けクラウドプランの円建て料金・支払周期",
+      "国内在庫・実売価格",
+      "カードの実購入価格",
+      "メーカー希望小売価格"
+    ],
+    "source_urls": [
+      "https://www.tp-link.com/jp/home-networking/cloud-camera/tapo-c120/"
+    ],
+    "scope_note": "日本公式ページの取得時表示仕様。ハードウェア版や販売地域により相違し得る。実機検証・販売在庫確認は未実施。",
+    "monthly_fee_jpy": null,
+    "monthly_fee_reason": "Tapo Care有償サービスの存在は確認。日本向けプランの円建て料金は取得本文で確認できず。",
+    "demo": false,
+    "features": [
+      "2K QHD 4MP（2560×1440px）",
+      "microSDカードスロット（最大512GB/カードは別売り）",
+      "双方向通話（ノイズキャンセリング搭載）"
+    ],
+    "price_yen": null,
+    "price_kind": null,
+    "affiliate_url": null
+  }
+]
