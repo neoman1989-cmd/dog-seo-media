@@ -1,0 +1,28 @@
+name: Draft editorial pipeline
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 23 * * 1'
+permissions:
+  contents: read
+concurrency:
+  group: editorial-drafts
+  cancel-in-progress: false
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Tests
+        run: python -m unittest discover -s tests -v
+      - name: Generate mock draft (no network or publication)
+        run: python -m seo_media.engine --mode mock --post
+      - uses: actions/upload-artifact@v4
+        with:
+          name: editorial-review
+          path: output/
+          retention-days: 14

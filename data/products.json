@@ -1,0 +1,4 @@
+[
+ {"id":"demo-camera-a","name":"サンプル見守りカメラA","category":"ペットカメラ","features":["通知機能","双方向音声"],"price_yen":null,"source_url":"https://example.com/demo-a","verified_on":null,"affiliate_url":null,"demo":true},
+ {"id":"demo-camera-b","name":"サンプル見守りカメラB","category":"ペットカメラ","features":["録画機能"],"price_yen":null,"source_url":"https://example.com/demo-b","verified_on":null,"affiliate_url":null,"demo":true}
+]
