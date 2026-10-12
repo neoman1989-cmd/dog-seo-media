@@ -21,17 +21,25 @@ WordPress 6.4+、PHP 8.1+、HTTPSを用意する。今回サーバー契約・�
 
 環境変数 `OPENAI_API_KEY`、`WP_URL`（HTTPS）、`WP_USER`、`WP_APP_PASSWORD` を安全に設定。GitHubに.envや値を書かない。
 
+記事生成と投稿は別コマンドです。今回の作業ではライブは禁止です。APIキーを入れずに以下のモック手順を試せます。
+
 ```bash
-python -m seo_media.engine --mode live
-# output内の検査結果と記事をレビュー。以下は再生成・実送信するため別の出力先を使う。
-python -m seo_media.engine --mode live --post --output output/approved-run
+python -m seo_media.engine init-state
+python -m seo_media.engine generate --mode mock
+# output/article-<hash>.jsonを編集者が確認。実際のパスを指定する。
+python -m seo_media.engine approve --article output/article-<hash>.json
+python -m seo_media.engine post --mode mock --article output/article-<hash>.json
 ```
 
-現行CLIは承認済みJSONの再送信や手動承認状態の記録には未対応。実運用では生成と投稿の二段階承認を追加してから定期ライブ投稿を有効にする。WordPressへは常に下書きで送信する。ネットワーク不明時の自動リトライはしない（重複投稿回避）。投稿成功JSONを保存する。複数実行間の重複検査には同じoutputを維持する。
+approveは生成台帳に登録されたJSONのSHA-256を記録します。投稿は同じハッシュと現在の品質ゲートの成功が必須です。承認後の内容変更は拒否します。空白やJSONキー順はハッシュに影響しません。JSON内容の編集を伴うリライトの登録フローは未対応です。
+
+将来ライブを明示的に許可する場合のみ、確認済み予算設定と専用状態ブランチを利用します。予算・障害時の復旧仕様は [safety.md](safety.md) を先に確認してください。生成と投稿のCLIはそれぞれ `generate --mode live --budget-config <file> --state-git-dir <repo-root>` と `post --mode live --article <file> --state-git-dir <repo-root>` です。生成から投稿への自動連携はありません。承認も同じ永続台帳に `approve --state-git-dir <repo-root>` で保存します。
 
 ## CI
 
-Actionsは既定ではモックのみ。APIキー不要。週1回のartifactを編集者が確認する。ライブへの変更はAPI予算・安全なSecrets・永続的記事履歴・人の承認フローを整えて別途レビューする。無料枠の利用条件をGitHubで確認する。
+Actionsはモック生成のみ。キー不要で、承認・投稿コマンドは実行しません。日曜23:00 UTC（月曜08:00 JST）、および手動起動。スケジュールはデフォルトブランチへマージ後に有効になります。
+
+履歴保存のためGITHUB_TOKENのcontents:writeを専用 `editorial-state` ブランチへのpushに使用します。状態取得・保存が失敗すると生成を停止。リポジトリ設定でActionsの書込みが許可されている必要があります。Artifactはレビュー用で、重複判定の保存元には使いません。キャッシュの欠落や14日のartifact期限によって履歴を失いません。
 
 ## 動作確認
 

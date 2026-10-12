@@ -35,7 +35,7 @@ def secure_url(url):
     return parsed.scheme == "https" and bool(parsed.hostname) and not parsed.username and not parsed.password
 
 
-def generate(brief, products, mode="mock"):
+def generate(brief, products, mode="mock", *, state=None, budget=None):
     selected = [p for p in products if p["category"] == brief["category"]]
     if mode == "mock":
         rows = "".join(f'<tr><th>{html.escape(p["name"])}</th><td>{html.escape("・".join(p["features"]))}</td><td>公式サイトで確認</td></tr>' for p in selected)
@@ -64,11 +64,16 @@ def generate(brief, products, mode="mock"):
         if not 0 <= age <= 30:
             raise ValueError("Product verification must be within 30 days")
     prompt = {"brief":brief,"products":selected,"instructions":"日本語のSEO比較記事をJSONのみで返す。title, keyword, content(HTML), product_ids, sourcesを含める。入力の公式情報のみを使う。商品・価格・体験・ランキングを創作しない。広告表示、選び方、比較表、注意点、FAQ、出典を含める。医療や安全の効果を断定しない。HTMLはscriptやイベント属性を含めない。"}
-    result = request_json("https://api.openai.com/v1/chat/completions", {
+    payload = {
         "model":os.getenv("OPENAI_MODEL", "gpt-4.1-mini"), "max_tokens":2500,
         "response_format":{"type":"json_object"},
-        "messages":[{"role":"user","content":json.dumps(prompt,ensure_ascii=False)}]},
+        "messages":[{"role":"user","content":json.dumps(prompt,ensure_ascii=False)}]}
+    if state is None or budget is None or state.checkpoint is None:
+        raise ValueError("Live generation requires budget and durable checkpoint")
+    reservation = budget.reserve(state, payload['model'], payload['messages'], payload['max_tokens'])
+    result = request_json("https://api.openai.com/v1/chat/completions", payload,
         {"Authorization":"Bearer " + os.environ["OPENAI_API_KEY"]})
+    budget.confirm(state, reservation, result)
     article = json.loads(result["choices"][0]["message"]["content"])
     article["mode"] = "live"
     return article
@@ -118,42 +123,106 @@ def inspect(article, products, previous=()):
     return {"passed":not errors,"errors":errors,"warnings":warnings,"human_review_required":True}
 
 
-def post_draft(article, report, mode="mock"):
-    if not report["passed"]: raise ValueError("Quality gate failed")
+def article_hash(article):
+    return hashlib.sha256(json.dumps(article, ensure_ascii=False, sort_keys=True, separators=(",", ":"), allow_nan=False).encode()).hexdigest()
+
+
+def approve_article(article, state):
+    digest = article_hash(article)
+    entry = state.data['articles'].get(digest)
+    if entry is None or entry['article'] != article:
+        raise ValueError("Article not in generation ledger")
+    entry['approved_hash'] = digest
+    state.save()
+    return digest
+
+
+def post_draft(article, products, state, mode="mock"):
+    digest = article_hash(article)
+    entry = state.data['articles'].get(digest)
+    if entry is None or entry.get('approved_hash') != digest or entry['article'] != article:
+        raise ValueError("Approval hash mismatch or missing approval")
+    report = inspect(article, products)
+    if not report['passed']: raise ValueError("Quality gate failed")
+    destination = 'mock' if mode == 'mock' else os.getenv('WP_URL','').rstrip('/')
+    key = hashlib.sha256((mode + digest).encode()).hexdigest()
+    if key in state.data['posts']: raise ValueError("Already posted or unresolved posting attempt")
     payload = {"title":article["title"], "content":article["content"], "status":"draft"}
-    if mode == "mock": return {"mock":True,"payload":payload}
-    if mode != "live" or article.get("mode") != "live": raise ValueError("Only live articles may reach WordPress")
-    url = os.getenv("WP_URL", "").rstrip("/")
-    if not secure_url(url): raise ValueError("WP_URL must be HTTPS without embedded credentials")
-    user, password = os.getenv("WP_USER"), os.getenv("WP_APP_PASSWORD")
-    if not user or not password: raise ValueError("WordPress application password and user are required")
-    auth = base64.b64encode(f"{user}:{password}".encode()).decode()
-    return request_json(url + "/wp-json/wp/v2/posts", payload, {"Authorization":"Basic " + auth})
+    headers = None
+    if mode != 'mock':
+        if mode != 'live' or article.get('mode') != 'live': raise ValueError('Only live articles may reach WordPress')
+        if not secure_url(destination): raise ValueError('WP_URL must be HTTPS without embedded credentials')
+        user, password = os.getenv('WP_USER'), os.getenv('WP_APP_PASSWORD')
+        if not user or not password: raise ValueError('WordPress application password and user are required')
+        if state.checkpoint is None: raise ValueError('Live posting requires durable checkpoint')
+        headers = {'Authorization':'Basic ' + base64.b64encode(f'{user}:{password}'.encode()).decode()}
+    state.data['posts'][key] = {'article_hash':digest,'status':'pending','destination':destination}
+    state.save()  # intent is durable before POST; timeout/crash cannot cause automatic retry
+    result = {'mock':True,'payload':payload} if mode == 'mock' else request_json(destination + '/wp-json/wp/v2/posts', payload, headers)
+    if mode == 'live' and (type(result.get('id')) is not int or result.get('status') != 'draft'):
+        raise ValueError('Unknown WordPress result; reconcile pending attempt manually')
+    state.data['posts'][key].update(status='completed', result=result)
+    state.save()
+    return result
+
+
+def generate_once(brief, products, state, mode='mock', budget=None):
+    key = hashlib.sha256((mode + brief['keyword']).encode()).hexdigest()
+    existing = [v['article'] for v in state.data['articles'].values()]
+    if any(v.get('generation_key') == key for v in state.data['articles'].values()):
+        return None
+    if key in state.data.get('generation_attempts', {}):
+        raise ValueError('Unresolved generation attempt; refusing automatic retry')
+    state.data.setdefault('generation_attempts', {})[key] = 'pending'
+    state.save()
+    article = generate(brief, products, mode, state=state, budget=budget)
+    report = inspect(article, products, existing)
+    if not report['passed']: raise ValueError('Quality gate failed: ' + str(report['errors']))
+    digest = article_hash(article)
+    state.data['articles'][digest] = {'article':article,'generation_key':key,'report':report}
+    state.data['generation_attempts'][key] = 'completed'
+    state.save()
+    return article
 
 
 def main():
+    from .state import State, initialize, git_checkpoint
+    from .budget import Budget
     parser = argparse.ArgumentParser()
-    parser.add_argument("--mode", choices=("mock","live"), default=os.getenv("MEDIA_MODE","mock"))
-    parser.add_argument("--post", action="store_true", help="Send draft (mock records payload locally)")
-    parser.add_argument("--output", default="output")
+    parser.add_argument('command', choices=('init-state','generate','approve','post'))
+    parser.add_argument('--mode', choices=('mock','live'), default='mock')
+    parser.add_argument('--state', default='.state/ledger.json')
+    parser.add_argument('--state-git-dir')
+    parser.add_argument('--budget-config')
+    parser.add_argument('--article')
+    parser.add_argument('--output', default='output')
     args = parser.parse_args()
-    products = json.loads(Path("data/products.json").read_text())
-    briefs = json.loads(Path("data/briefs.json").read_text())
+    if args.command == 'init-state':
+        initialize(args.state); return
+    if args.state_git_dir and Path(args.state).resolve() != (Path(args.state_git_dir) / '.state/ledger.json').resolve():
+        parser.error('Git checkpoint must persist the exact state file at .state/ledger.json')
+    state = State(args.state, git_checkpoint(args.state_git_dir) if args.state_git_dir else None)
+    products = json.loads(Path('data/products.json').read_text())
     output = Path(args.output); output.mkdir(parents=True, exist_ok=True)
-    previous = [json.loads(p.read_text()) for p in output.glob("article-*.json")]
-    for brief in briefs:
-        article = generate(brief, products, args.mode)
-        key = hashlib.sha256(brief["keyword"].encode()).hexdigest()[:16]
-        target = output / f"article-{key}.json"
-        report = inspect(article, products, previous)
-        (output / f"report-{key}.json").write_text(json.dumps(report,ensure_ascii=False,indent=2))
-        if not report["passed"]: raise SystemExit("Quality gate failed; inspect output report")
-        target.write_text(json.dumps(article,ensure_ascii=False,indent=2))
-        if args.post:
-            posted = post_draft(article, report, args.mode)
-            (output / f"draft-{key}.json").write_text(json.dumps(posted,ensure_ascii=False,indent=2))
-        previous.append(article)
-        print(f"Generated {target}; human review required")
+    with state.locked():
+        if args.command == 'generate':
+            budget = Budget(args.budget_config) if args.budget_config else None
+            for brief in json.loads(Path('data/briefs.json').read_text()):
+                article = generate_once(brief, products, state, args.mode, budget)
+                if article is None:
+                    print('Already generated; skipped'); continue
+                target = output / ('article-' + article_hash(article) + '.json')
+                target.write_text(json.dumps(article,ensure_ascii=False,indent=2))
+                print(f'Generated {target}; explicit approval required')
+        else:
+            if not args.article: parser.error('--article is required')
+            article = json.loads(Path(args.article).read_text())
+            if args.command == 'approve':
+                if not inspect(article, products)['passed']: raise ValueError('Quality gate failed')
+                print(approve_article(article, state))
+            else:
+                result = post_draft(article, products, state, args.mode)
+                (output / ('draft-' + article_hash(article) + '.json')).write_text(json.dumps(result,ensure_ascii=False,indent=2))
 
 
-if __name__ == "__main__": main()
+if __name__ == '__main__': main()

@@ -9,3 +9,7 @@
 - Python変更後は `python -m unittest discover -s tests -v`、PHP変更後は `find wordpress/dog-seo -name '*.php' -exec php -l {} \;` を実施する。
 - 外部送信の検証はmockまたはテストダブルで行う。実投稿には接続先と資格情報が必要。
 - テスト未実行・スキップ・未検証の実動作を明示する。
+
+- OpenAI月額上限3,000円を維持する。料金・為替・既存支出不明時はライブ停止。予約した費用を自動で解除しない。
+- 投稿には生成台帳の承認済みハッシュを必須とする。承認後の変更は再生成・再審査対象。
+- 永続履歴はeditorial-stateブランチ。API呼出し前に予約／投稿意図をpushする。pending/unknownは人が照合するまで再試行しない。

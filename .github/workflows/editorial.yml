@@ -2,11 +2,11 @@ name: Draft editorial pipeline
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 23 * * 1'
+    - cron: '0 23 * * 0' # Sunday 23:00 UTC = Monday 08:00 JST
 permissions:
-  contents: read
+  contents: write # only to persist the dedicated editorial-state branch
 concurrency:
-  group: editorial-drafts
+  group: editorial-state
   cancel-in-progress: false
 jobs:
   draft:
@@ -17,12 +17,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Tests
+      - name: Tests (no live APIs)
         run: python -m unittest discover -s tests -v
-      - name: Generate mock draft (no network or publication)
-        run: python -m seo_media.engine --mode mock --post
+      - name: Restore durable ledger (failure stops generation)
+        run: python -m seo_media.state "$GITHUB_WORKSPACE"
+      - name: Generate mock articles only (no approval, posting or paid APIs)
+        run: python -m seo_media.engine generate --mode mock --state-git-dir "$GITHUB_WORKSPACE"
       - uses: actions/upload-artifact@v4
         with:
           name: editorial-review
           path: output/
+          if-no-files-found: ignore
           retention-days: 14
