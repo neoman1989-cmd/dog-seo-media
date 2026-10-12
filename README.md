@@ -26,3 +26,5 @@ python -m seo_media.engine generate --mode mock
 検査は出典URLと台帳の整合性を確認しますが、URLの実在や内容の真偽を自動保証しません。実投稿前に公式情報・価格・機能・独自性を編集者が確認してください。ライブ生成にはAPI利用料が発生します。今回ライブAPIは使用していません。OpenAIの月額上限は3,000円で、確認済み料金・為替・既存支出の上限が未設定なら停止します。[予算と永続状態の仕様](docs/safety.md)を参照してください。
 
 詳細: [セットアップ](docs/setup.md)、[サイト設計・事業計画](docs/site-plan.md)、[運用・品質管理](docs/editorial.md)。
+
+WordPress実表示の再現手順・スクリーンショット・検証結果: [ローカル検証](docs/wordpress-validation.md)。

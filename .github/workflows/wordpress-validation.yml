@@ -1,0 +1,40 @@
+name: Local WordPress validation
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Create ignored local credentials
+        run: python validation/init.py
+      - name: Start isolated WordPress
+        run: |
+          docker compose --project-name dog-media-validation --env-file validation/.env -f validation/compose.yml up -d wordpress
+          docker compose --project-name dog-media-validation --env-file validation/.env -f validation/compose.yml run --rm cli
+      - name: Install browser test dependencies
+        working-directory: validation/browser
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+      - name: Verify pages and save screenshots
+        working-directory: validation/browser
+        env:
+          CHROMIUM_PATH: bundled
+        run: npm test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: wordpress-rendering
+          path: artifacts/wordpress/
+          if-no-files-found: ignore
+          retention-days: 14
+      - name: Stop local services
+        if: always()
+        run: docker compose --project-name dog-media-validation --env-file validation/.env -f validation/compose.yml down

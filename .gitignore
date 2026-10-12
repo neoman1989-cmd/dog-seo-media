@@ -6,3 +6,7 @@ __pycache__/
 .venv/
 output/
 .state/
+node_modules/
+.browsers/
+validation/browser/test-results/
+validation/browser/playwright-report/
