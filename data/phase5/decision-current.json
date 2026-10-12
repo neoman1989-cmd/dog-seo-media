@@ -1,0 +1,14 @@
+{
+  "initial_spend_jpy": null,
+  "monthly_total_spend_jpy": null,
+  "owner_allows_live_validation": false,
+  "personal_terms_verified": false,
+  "serp_reviewed": false,
+  "tracking_verified": false,
+  "observation_days": 0,
+  "tracked_outbound_clicks": 0,
+  "approved_outcomes": 0,
+  "scope": "Phase5の追加支払いは0。オーナー側の既存請求を含む全体実費は未確認なのでnull。",
+  "recommendation": "ペット維持、既存3記事は増産しない。小規模事業者Web運用ジャンルを非公開並行検証。",
+  "phase5_extra_spend_jpy": 0
+}

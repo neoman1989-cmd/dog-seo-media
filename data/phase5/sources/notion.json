@@ -1,0 +1,7 @@
+{
+  "id": "notion",
+  "requested_url": "https://www.notion.com/affiliates",
+  "checked_at": "2026-10-12T17:49:19.535586+09:00",
+  "status": "unavailable",
+  "error": "HTTP Error 403: Forbidden"
+}

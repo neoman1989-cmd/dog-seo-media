@@ -1,0 +1,9 @@
+{
+  "id": "pet-furbo",
+  "requested_url": "https://furbo.com/jp/products/furbo-mini-360",
+  "checked_at": "2026-10-12T18:04:48.169026+09:00",
+  "status": "captured_not_reviewed",
+  "final_url": "https://furbo.com/jp/products/furbo-mini-360",
+  "sha256": "e7f46f078acbe4e649597e6154e90b36ce9e847e0e037225163f90db9b84ed6a",
+  "raw_sha256": "72d983b858cf868606ff2534bf1cb44c4ef8a2e27c37a15c8dedc6b68134b6fb"
+}

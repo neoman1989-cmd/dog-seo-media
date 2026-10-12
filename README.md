@@ -32,3 +32,5 @@ WordPress実表示の再現手順・スクリーンショット・検証結果: 
 Phase 3: [公式商品台帳](data/research/products.json)、[キーワード10件](data/research/keywords.json)、[3記事と出典検査の仕様](docs/phase3.md)、[Search Console/GA4設計](docs/analytics-plan.md)。実商品データはモック台帳とは別に管理しています。
 
 Phase 4（記事増産より収益検証）: [試算・ASP調査](docs/phase4/profitability.md)、[競合調査の制約](docs/phase4/competition.md)、[移行と費用](docs/phase4/migration.md)、[接続・週次運用](docs/phase4/operations.md)、[オーナー作業と公開前チェック](docs/phase4/checklist.md)。
+
+Phase 5（既存サイトは維持）: [ジャンル再評価・提案](docs/phase5/assessment.md)、[確認済み報酬の条件付き試算](docs/phase5/models.md)、[20語・5企画](docs/phase5/keyword-plans.md)、[90日判断基準](docs/phase5/ninety-days.md)、[調査出典](docs/phase5/sources.md)、[実装結果](docs/phase5/results.md)。

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "kw-01",
+    "keyword": "個人事業主 ホームページ サーバー 選び方",
+    "intent_hypothesis": "初回契約比較",
+    "purchase_intent_hypothesis": "高",
+    "plan_id": "p1",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-02",
+    "keyword": "小規模店舗 WordPress 費用",
+    "intent_hypothesis": "初期/継続費用",
+    "purchase_intent_hypothesis": "高",
+    "plan_id": "p1",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-03",
+    "keyword": "レンタルサーバー 12ヶ月 更新料金 比較",
+    "intent_hypothesis": "契約期間と更新費",
+    "purchase_intent_hypothesis": "高",
+    "plan_id": "p1",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-04",
+    "keyword": "法人 小規模 WordPress サーバー 条件",
+    "intent_hypothesis": "法人要件比較",
+    "purchase_intent_hypothesis": "高",
+    "plan_id": "p1",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-05",
+    "keyword": "WordPress サーバー 初期費用 予算",
+    "intent_hypothesis": "予算適合",
+    "purchase_intent_hypothesis": "高",
+    "plan_id": "p1",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-06",
+    "keyword": "WordPress 移行 チェックリスト",
+    "intent_hypothesis": "移行計画",
+    "purchase_intent_hypothesis": "中",
+    "plan_id": "p2",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-07",
+    "keyword": "店舗 ホームページ 引っ越し ドメイン メール",
+    "intent_hypothesis": "事業影響確認",
+    "purchase_intent_hypothesis": "中",
+    "plan_id": "p2",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-08",
+    "keyword": "WordPress サーバー 移転 DNS 切り替え",
+    "intent_hypothesis": "技術手順",
+    "purchase_intent_hypothesis": "中",
+    "plan_id": "p2",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-09",
+    "keyword": "WordPress 移転 失敗 戻す",
+    "intent_hypothesis": "復旧課題",
+    "purchase_intent_hypothesis": "低〜中",
+    "plan_id": "p2",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-10",
+    "keyword": "WordPress バックアップ 復元 確認",
+    "intent_hypothesis": "復元検証",
+    "purchase_intent_hypothesis": "中",
+    "plan_id": "p3",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-11",
+    "keyword": "WordPress 更新前 バックアップ 手順",
+    "intent_hypothesis": "運用手順",
+    "purchase_intent_hypothesis": "低〜中",
+    "plan_id": "p3",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-12",
+    "keyword": "小規模サイト バックアップ 保存先",
+    "intent_hypothesis": "保管条件比較",
+    "purchase_intent_hypothesis": "中",
+    "plan_id": "p3",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-13",
+    "keyword": "WordPress ステージング 作り方 ローカル",
+    "intent_hypothesis": "検証構築",
+    "purchase_intent_hypothesis": "低",
+    "plan_id": "p3",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-14",
+    "keyword": "WordPress 問い合わせ メール 届かない 店舗",
+    "intent_hypothesis": "業務障害の解決",
+    "purchase_intent_hypothesis": "低〜中",
+    "plan_id": "p4",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-15",
+    "keyword": "WordPress サーバー メール 制限 比較",
+    "intent_hypothesis": "メール条件比較",
+    "purchase_intent_hypothesis": "中",
+    "plan_id": "p4",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-16",
+    "keyword": "WordPress フォーム 個人情報 設定",
+    "intent_hypothesis": "情報管理",
+    "purchase_intent_hypothesis": "低",
+    "plan_id": "p4",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-17",
+    "keyword": "WordPress SSL 移転 チェック",
+    "intent_hypothesis": "HTTPS移行",
+    "purchase_intent_hypothesis": "中",
+    "plan_id": "p5",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-18",
+    "keyword": "WordPress 公開前 チェックリスト 事業",
+    "intent_hypothesis": "公開判断",
+    "purchase_intent_hypothesis": "中",
+    "plan_id": "p5",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-19",
+    "keyword": "WordPress 管理者 権限 投稿者 違い",
+    "intent_hypothesis": "権限設計",
+    "purchase_intent_hypothesis": "低",
+    "plan_id": "p5",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  },
+  {
+    "id": "kw-20",
+    "keyword": "小規模事業 サイト 運用 引き継ぎ",
+    "intent_hypothesis": "継続運用",
+    "purchase_intent_hypothesis": "中",
+    "plan_id": "p5",
+    "search_volume": null,
+    "google_difficulty": null,
+    "rank": null,
+    "evaluation_status": "editorial_proposal_not_serp_measurement"
+  }
+]
