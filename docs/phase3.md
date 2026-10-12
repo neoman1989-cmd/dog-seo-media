@@ -44,13 +44,13 @@ python -m unittest discover -s tests -v
 
 ## 公開停止ゲート
 
-非mockの記事にはmanifest、編集レビュー、保存本文、引用・値・商品URL・確認日・ハッシュの一致が必要。未確認の値を断定したもの、出典変更後の記事、未承認構成、本文への追記は拒否。unknownかつvalue:nullかつ理由を明示した項目は「未確認」とのみ表示でき、料金を断定していないため許容する。各商品に少なくとも1つの検証済み項目が無ければ停止。アフィリエイトURLは提携前のため全て禁止する。
+非mockの記事にはmanifest、編集レビュー、保存本文、引用・値・商品URL・確認日・ハッシュの一致が必要。未確認の値を断定したもの、出典変更後の記事、未承認構成、本文への追記は拒否。unknownかつvalue:nullかつ理由を明示した項目は「未確認」とのみ表示でき、料金を断定していないため許容する。各商品に少なくとも1つの検証済み項目が無ければ停止。Phase 3時点では提携前のため広告URLを全て禁止した。Phase 4の承認・期限・ホスト検査と公式fallback設計はdocs/phase4/operations.mdを参照。
 
 レポートのpublishableは出典整合検査の結果であり、本番公開の許可ではない。WordPress投稿statusは常にdraft。外部送信には別の手動ハッシュ承認と耐久状態保存が引き続き必要。現行CLIに `--products data/research/products.json` と `import-article --article ...` を追加し、出典検査済みJSONを台帳へ登録可能。importは承認・投稿をしない。本作業では本番投稿コマンドを実行していない。
 
 ## リンク管理
 
-商品台帳のsource_urlは通常の公式リンク。affiliateにはnot_partnered、ASP名・承認ID・URLはnullを保存。URLを創作しない。将来はASP側の提携承認記録と実際に提供されたURLを別フィールドで保存し、承認日・対象商品・有効期限と広告表示を確認する。現段階ではURLを設定するとレンダラーが停止し、ASPリンクを設置できない。
+商品台帳のsource_urlは通常の公式リンク。affiliateにはnot_partnered、ASP名・承認ID・URLはnullを保存。URLを創作しない。将来はASP側の提携承認記録と実際に提供されたURLを別フィールドで保存し、承認日・対象商品・有効期限と広告表示を確認する。Phase 3時点ではURL設定で停止した。現在はPhase 4の既定無効・承認後切替・公式fallbackへ移行した。実際の台帳には広告URLを一切設定していない。
 
 ## WordPress検証
 

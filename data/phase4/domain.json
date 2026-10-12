@@ -1,0 +1,26 @@
+{
+  "provider": "お名前.com",
+  "public": [
+    {
+      "quote": "登録料金、更新料金は、選択するドメイン（.com/.netなど）の種類や、契約する年数によって変わります。",
+      "url": "https://www.onamae.com/service/d-price/",
+      "text_file": "data/phase4/domain.txt",
+      "sha256": "6ff348eab7a29d76941cf20378efd0f31777b82bedda2c4c93c057d6d820f3ec",
+      "checked_on": "2026-10-12",
+      "scope": "public_document_only"
+    },
+    {
+      "quote": "「サービス維持調整費」を加算させていただきます。",
+      "url": "https://www.onamae.com/service/d-price/",
+      "text_file": "data/phase4/domain.txt",
+      "sha256": "6ff348eab7a29d76941cf20378efd0f31777b82bedda2c4c93c057d6d820f3ec",
+      "checked_on": "2026-10-12",
+      "scope": "public_document_only"
+    }
+  ],
+  "registration_jpy": null,
+  "renewal_jpy": null,
+  "reason": "取得本文では希望.comの登録・更新・調整費を同条件で確定できず。広告上の最低額を採用しない。",
+  "purchase_status": "not_purchased",
+  "alternative": "サーバー付帯ドメインの対象TLDと更新条件も比較。"
+}

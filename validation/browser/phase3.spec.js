@@ -1,6 +1,8 @@
 const {test,expect}=require('@playwright/test');
 const fs=require('fs'),path=require('path');
 const records=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../../artifacts/phase3/wp-posts.json'),'utf8'));
+const products=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../../data/research/products.json'),'utf8'));
+const output=process.env.PHASE4_VALIDATION==='1'?'../../artifacts/phase4/screenshots':'../../artifacts/phase3';
 const credentials=fs.readFileSync(path.resolve(__dirname,'../.env'),'utf8');
 const password=credentials.split('\n').find(line=>line.startsWith('LOCAL_WP_PASSWORD=')).slice('LOCAL_WP_PASSWORD='.length);
 for(const slug of ['camera-selection','camera-monthly-cost','camera-recording']){
@@ -21,10 +23,12 @@ for(const slug of ['camera-selection','camera-monthly-cost','camera-recording'])
   await expect(page.locator('main h1')).toBeVisible();
   await expect(page.locator('main')).toContainText('公式資料の引用に基づく編集下書き');
   await expect(page.locator('main')).toContainText('未確認');
-  await expect(page.locator('table tbody tr')).toHaveCount(5);
+  const manifest=JSON.parse(fs.readFileSync(path.resolve(__dirname,`../../content/manifests/${slug}.json`),'utf8'));
+  await expect(page.locator('table tbody tr')).toHaveCount(manifest.product_ids.length);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   const sourceLinks=page.locator('main table a');
-  for(const link of await sourceLinks.all()) expect(await link.getAttribute('href')).toMatch(/^https:\/\/www\.tp-link\.com\//);
-  await page.screenshot({path:path.resolve(__dirname,'../../artifacts/phase3',`${info.project.name}-${slug}.png`),fullPage:true});
+  const allowed=new Set(manifest.product_ids.map(id=>products.find(p=>p.id===id).source_url));
+  for(const link of await sourceLinks.all()){expect(allowed.has(await link.getAttribute('href'))).toBe(true);await expect(link).toHaveAttribute('data-link-type','official');}
+  await page.screenshot({path:path.resolve(__dirname,output,`${info.project.name}-${slug}.png`),fullPage:true});
  });
 }

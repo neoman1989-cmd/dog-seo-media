@@ -36,18 +36,25 @@ def fact_errors(product,field,evidence_root=Path('.'),today=None):
     return errors
 
 
-def link_for(product):
+def link_for(product,policy=None):
+    from .links import resolve
     if not allowed(product['source_url']): raise ValueError('Official link is not allowlisted')
-    link=product.get('affiliate',{})
-    if link.get('url') is not None or product.get('affiliate_url') is not None: raise ValueError('ASP links are disabled before partnership approval')
-    return product['source_url'], 'official'
+    result=resolve(product,policy)
+    return result['url'],result['type']
 
 
-def render(manifest,products,evidence_root=Path(".")):
+def link_policy():
+    path=Path('config/monetization.json')
+    return json.loads(path.read_text()) if path.exists() else {'affiliate_enabled':False}
+
+
+def render(manifest,products,evidence_root=Path("."),policy=None):
+    policy=policy if policy is not None else link_policy()
     catalog={p['id']:p for p in products}
+    has_ads=any(link_for(catalog[pid],policy)[1]=='affiliate' for pid in manifest['product_ids'])
     esc=lambda value:html.escape(str(value),quote=True)
     ready=manifest.get('editorial_review')=='approved'
-    chunks=['<p>広告方針：現在ASP提携前で、アフィリエイトリンクは設置していません。</p>', ('<p class="notice">公式資料の引用に基づく編集下書きです。実機レビューではありません。未確認の料金は推測で補っていません。</p>' if ready else '<p class="notice">調査用下書きです。公式資料の確認が完了するまで公開できません。</p>')]
+    chunks=[('<p>広告：ASP・オーナー承認済みのアフィリエイトリンクを含みます。</p>' if has_ads else '<p>広告方針：現在アフィリエイトリンクは設置していません。通常の公式リンクで情報を確認できます。</p>'), ('<p class="notice">公式資料の引用に基づく編集下書きです。実機レビューではありません。未確認の料金は推測で補っていません。</p>' if ready else '<p class="notice">調査用下書きです。公式資料の確認が完了するまで公開できません。</p>')]
     for section in manifest['sections']:
         chunks.append('<h2>'+esc(section['heading'])+'</h2>')
         for paragraph in section['paragraphs']: chunks.append('<p>'+esc(paragraph)+'</p>')
@@ -55,8 +62,9 @@ def render(manifest,products,evidence_root=Path(".")):
     for field in manifest['fields']: chunks.append('<th>'+esc(manifest['labels'][field])+'</th>')
     chunks.append('</tr></thead><tbody>')
     for pid in manifest['product_ids']:
-        p=catalog[pid]; url,_=link_for(p)
-        chunks.append('<tr><th><a href="'+esc(url)+'">'+esc(p['name'])+('' if p.get('verified_on') else '（調査候補）')+'</a></th>')
+        p=catalog[pid]; url,kind=link_for(p,policy)
+        rel='sponsored nofollow noopener' if kind=='affiliate' else 'noopener'
+        chunks.append('<tr><th><a href="'+esc(url)+'" rel="'+rel+'" data-link-type="'+kind+'">'+esc(p['name'])+('' if p.get('verified_on') else '（調査候補）')+'</a></th>')
         for field in manifest['fields']:
             fact=p['facts'][field]
             value=fact['value'] if not fact_errors(p,field,evidence_root) else '未確認'
@@ -85,7 +93,7 @@ def release_report(article,manifest,products,evidence_root=Path('.')):
             p=catalog[pid]
             link_for(p)
             verified_count=0
-            for field in manifest['fields']:
+            for field in set(manifest['fields'] + manifest.get('required_fact_fields',{}).get(pid,[])):
                 fact=p.get('facts',{}).get(field,{})
                 if fact.get('status')=='unknown' and fact.get('value') is None and fact.get('reason'):
                     continue  # Explicit unknown is not asserted as a fact.

@@ -1,0 +1,10 @@
+{
+  "url": "https://www.xserver.ne.jp/price/",
+  "checked_at": "2026-10-12T17:13:41.375833+09:00",
+  "status": "captured",
+  "decoding_warning": "Replacement characters: do not verify affected text",
+  "final_url": "https://www.xserver.ne.jp/price/",
+  "text_file": "data/phase4/xserver.txt",
+  "sha256": "46078f64235f2a87c04e26eb12933d61d0c72e7fa7f7354ee48f3dfda00fdbbe",
+  "raw_sha256": "d7ee323b0e2f5b041c511fd0e4c54e1ee5c04861a8c917d6cf1a301cee5536a3"
+}

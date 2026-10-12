@@ -1,0 +1,102 @@
+[
+  {
+    "provider": "さくらのレンタルサーバ",
+    "public": [
+      {
+        "quote": "月額500円からWordPressが使える人気プラン",
+        "url": "https://rs.sakura.ad.jp/",
+        "text_file": "data/phase4/sakura.txt",
+        "sha256": "c7144e5bb0af0a02e256b8bb908868bfbaec9a9c247fa935ae308b677936e285",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      },
+      {
+        "quote": "表示価格は36ヶ月一括契約した場合の月額換算となります。",
+        "url": "https://rs.sakura.ad.jp/",
+        "text_file": "data/phase4/sakura.txt",
+        "sha256": "c7144e5bb0af0a02e256b8bb908868bfbaec9a9c247fa935ae308b677936e285",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      },
+      {
+        "quote": "表示価格は全て税込みです。",
+        "url": "https://rs.sakura.ad.jp/",
+        "text_file": "data/phase4/sakura.txt",
+        "sha256": "c7144e5bb0af0a02e256b8bb908868bfbaec9a9c247fa935ae308b677936e285",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      }
+    ],
+    "scenario": {
+      "term_months": 36,
+      "monthly_equivalent_jpy": 500,
+      "hosting_upfront_jpy": 18000,
+      "calculation_is_not_checkout_quote": true
+    },
+    "unknown": [
+      "12ヶ月の具体額",
+      "更新時総額",
+      "ドメイン費用"
+    ],
+    "recommended_action": "年払い条件の実見積りを先に確認。長期契約の初期拘束に注意。"
+  },
+  {
+    "provider": "ConoHa WING",
+    "public": [
+      {
+        "quote": "WINGパックのベーシックプランを36ヶ月契約した場合、月額678円から利用できます。",
+        "url": "https://www.conoha.jp/",
+        "text_file": "data/phase4/conoha.txt",
+        "sha256": "7a2643ec9c72d1c7ae1ed4e8deea04a18b95da90d46c7dbd7724927e2d9a611b",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      }
+    ],
+    "scenario": {
+      "term_months": 36,
+      "monthly_equivalent_jpy": 678,
+      "hosting_upfront_jpy": 24408,
+      "calculation_is_not_checkout_quote": true
+    },
+    "unknown": [
+      "購入時キャンペーン適用",
+      "更新時料金",
+      "追加費用・無料ドメインの対象条件"
+    ],
+    "recommended_action": "初期予算の81%を拘束。他初期費用込みで上限超過しないか確認。"
+  },
+  {
+    "provider": "エックスサーバー",
+    "public": [
+      {
+        "quote": "12ヶ月 1,100円 → 990円",
+        "url": "https://www.xserver.ne.jp/price/",
+        "text_file": "data/phase4/xserver.txt",
+        "sha256": "46078f64235f2a87c04e26eb12933d61d0c72e7fa7f7354ee48f3dfda00fdbbe",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      },
+      {
+        "quote": "プラン比較 （税込） スタンダード",
+        "url": "https://www.xserver.ne.jp/price/",
+        "text_file": "data/phase4/xserver.txt",
+        "sha256": "46078f64235f2a87c04e26eb12933d61d0c72e7fa7f7354ee48f3dfda00fdbbe",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      }
+    ],
+    "scenario": {
+      "term_months": 12,
+      "campaign_monthly_jpy": 990,
+      "normal_display_monthly_jpy": 1100,
+      "hosting_upfront_scenario_jpy": 11880,
+      "calculation_is_not_checkout_quote": true
+    },
+    "unknown": [
+      "個人へのキャンペーン適用",
+      "初期・更新時の確定請求総額",
+      "ドメイン特典の適用"
+    ],
+    "recommended_action": "12ヶ月プランは初期枠に余裕。確定見積りはオーナーが購入直前に確認。"
+  }
+]

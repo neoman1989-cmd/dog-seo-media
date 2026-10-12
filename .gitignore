@@ -10,3 +10,4 @@ node_modules/
 .browsers/
 validation/browser/test-results/
 validation/browser/playwright-report/
+config/monetization.json
