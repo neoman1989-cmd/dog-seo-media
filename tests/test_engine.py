@@ -83,7 +83,9 @@ class PipelineTests(unittest.TestCase):
         with self.state().locked() as state:
             self.register(state)
             with patch.dict(os.environ,{'WP_URL':'https://wp.example','WP_USER':'editor','WP_APP_PASSWORD':'test-only'}), patch('seo_media.engine.request_json',return_value={'id':10,'status':'draft'}) as send:
-                post_draft(self.article,self.products,state,'live')
+                # Isolate the REST transport contract; evidence rejection is tested separately.
+                with patch('seo_media.engine.inspect',return_value={'passed':True}):
+                    post_draft(self.article,self.products,state,'live')
                 self.assertEqual(send.call_args.args[1]['status'],'draft')
         with self.state().locked() as state, patch.dict(os.environ,{'WP_URL':'https://WP.example/'}), patch('seo_media.engine.request_json') as send:
             with self.assertRaises(ValueError): post_draft(self.article,self.products,state,'live')
@@ -107,7 +109,7 @@ class PipelineTests(unittest.TestCase):
         credentials={'WP_URL':'https://wp.example','WP_USER':'editor','WP_APP_PASSWORD':'test-only'}
         with self.state().locked() as state:
             self.register(state)
-            with patch.dict(os.environ,credentials), patch('seo_media.engine.request_json',side_effect=RuntimeError('timeout')):
+            with patch.dict(os.environ,credentials), patch('seo_media.engine.request_json',side_effect=RuntimeError('timeout')), patch('seo_media.engine.inspect',return_value={'passed':True}):
                 with self.assertRaises(RuntimeError): post_draft(self.article,self.products,state,'live')
         with self.state().locked() as state, patch.dict(os.environ,credentials), patch('seo_media.engine.request_json') as send:
             with self.assertRaises(ValueError): post_draft(self.article,self.products,state,'live')

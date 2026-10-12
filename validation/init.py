@@ -3,6 +3,14 @@ from pathlib import Path
 import secrets
 import os
 path = Path(__file__).parent / '.env'
+root = Path(__file__).resolve().parent.parent
+if (root / 'content/articles').exists():
+    for directory in (root / 'content', root / 'content/articles'):
+        directory.chmod(0o755)
+    for file in (root / 'content/articles').glob('*.html'):
+        file.chmod(0o644)
+if (root / 'validation/phase3-seed.sh').exists():
+    (root / 'validation/phase3-seed.sh').chmod(0o644)
 fd = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
 with os.fdopen(fd, 'w') as stream:
     for name in ('LOCAL_DB_PASSWORD', 'LOCAL_DB_ROOT_PASSWORD', 'LOCAL_WP_PASSWORD'):
