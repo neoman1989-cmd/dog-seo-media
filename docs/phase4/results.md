@@ -24,3 +24,5 @@ GitHub APIのActions取得はForbidden。リモート実行状態は未確認。
 実収益、成約率、承認率、特別報酬、確定更新費用、独立した専門家/実機評価、本番解析の接続は未確認。オーナー作業と公開チェックが終わるまで「収益性実証済み」「本番公開準備完了」と扱わない。
 
 今回の外部課金・契約・ドメイン取得・ASP申請・有料API・本番公開は0件。新しい外部支払いなし。調査用ネットワーク追加は環境設定の下書きに保存したが、環境スナップショットの公開は実施していない。
+
+再現はローカル環境起動後、`python -m seo_media.content`、`docker compose --project-name dog-media-validation --env-file validation/.env -f validation/compose.yml run --rm --entrypoint sh cli /fixtures/phase3-seed.sh > artifacts/phase4/wp-posts.json`、`PHASE4_VALIDATION=1 npx playwright test --config phase4.config.js`（validation/browser内）を実行。記事IDは再seedの出力から読み、固定値を前提にしない。既存の検証環境準備・Chromium指定はdocs/wordpress-validation.mdを参照。

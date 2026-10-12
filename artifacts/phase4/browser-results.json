@@ -111,12 +111,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1701,
+                  "duration": 2931,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-12T08:24:09.254Z",
+                  "startTime": "2026-10-12T08:31:27.635Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -145,12 +145,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1432,
+                  "duration": 2347,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-12T08:24:11.425Z",
+                  "startTime": "2026-10-12T08:31:31.059Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -179,12 +179,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1445,
+                  "duration": 2249,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-12T08:24:12.873Z",
+                  "startTime": "2026-10-12T08:31:33.448Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -199,7 +199,7 @@
         },
         {
           "title": "camera-selection",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -212,18 +212,40 @@
                 {
                   "workerIndex": 1,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1437,
-                  "errors": [],
+                  "status": "timedOut",
+                  "duration": 30110,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/dog-seo-media/validation/browser/phase3.spec.js",
+                        "column": 14,
+                        "line": 20
+                      },
+                      "message": "Error: page.waitForURL: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/wp-admin/**\" until \"load\"\n============================================================\n\n  18 |   await page.locator('#user_pass').fill(password);\n  19 |   await page.locator('#wp-submit').click();\n> 20 |   await page.waitForURL('**/wp-admin/**');\n     |              ^\n  21 |   const response=await page.goto('/?p='+record.ID+'&preview=true');\n  22 |   expect(response.status()).toBe(200);\n  23 |   await expect(page.locator('main h1')).toBeVisible();\n    at /workspace/dog-seo-media/validation/browser/phase3.spec.js:20:14"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-12T08:24:14.904Z",
+                  "startTime": "2026-10-12T08:31:36.377Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/dog-seo-media/validation/browser/test-results/phase3-camera-selection-mobile375/error-context.md"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
           "id": "427316fb5d624da3bedc-f42a221a7e16b02c5366",
@@ -244,15 +266,15 @@
               "projectName": "mobile375",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1386,
+                  "duration": 2644,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-12T08:24:16.569Z",
+                  "startTime": "2026-10-12T08:32:07.888Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -278,15 +300,15 @@
               "projectName": "mobile375",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1293,
+                  "duration": 1939,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-12T08:24:17.980Z",
+                  "startTime": "2026-10-12T08:32:10.889Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -312,15 +334,15 @@
               "projectName": "desktop",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1486,
+                  "duration": 1994,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-12T08:24:19.854Z",
+                  "startTime": "2026-10-12T08:32:13.437Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -346,15 +368,15 @@
               "projectName": "desktop",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1628,
+                  "duration": 3058,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-12T08:24:21.553Z",
+                  "startTime": "2026-10-12T08:32:15.698Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -380,15 +402,15 @@
               "projectName": "desktop",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1478,
+                  "duration": 2363,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-12T08:24:23.197Z",
+                  "startTime": "2026-10-12T08:32:18.770Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -406,11 +428,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-12T08:24:08.523Z",
-    "duration": 16252.148999999998,
-    "expected": 9,
+    "startTime": "2026-10-12T08:31:26.802Z",
+    "duration": 54454.201,
+    "expected": 8,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

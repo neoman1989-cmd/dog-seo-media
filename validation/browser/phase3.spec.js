@@ -1,6 +1,6 @@
 const {test,expect}=require('@playwright/test');
 const fs=require('fs'),path=require('path');
-const records=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../../artifacts/phase3/wp-posts.json'),'utf8'));
+const records=JSON.parse(fs.readFileSync(path.resolve(__dirname,process.env.PHASE4_VALIDATION==='1'?'../../artifacts/phase4/wp-posts.json':'../../artifacts/phase3/wp-posts.json'),'utf8'));
 const products=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../../data/research/products.json'),'utf8'));
 const output=process.env.PHASE4_VALIDATION==='1'?'../../artifacts/phase4/screenshots':'../../artifacts/phase3';
 const credentials=fs.readFileSync(path.resolve(__dirname,'../.env'),'utf8');
