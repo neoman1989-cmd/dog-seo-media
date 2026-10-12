@@ -4,8 +4,9 @@ from hashlib import sha256
 import unittest
 class BusinessEvidenceTests(unittest.TestCase):
     def test_public_terms_are_bound_to_exact_captured_text(self):
-        for name in ('affiliate-programs','hosting'):
+        for name in ('affiliate-programs','hosting','domain-options'):
             rows=json.loads(Path('data/phase4/'+name+'.json').read_text())
+            if isinstance(rows,dict):rows=[rows]
             for row in rows:
                 for evidence in row['public']:
                     text=Path(evidence['text_file']).read_text()
