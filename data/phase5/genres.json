@@ -1,0 +1,150 @@
+[
+  {
+    "id": "pet",
+    "name": "犬の留守番・ペット関連",
+    "confirmed_fixed_2000_programs": [],
+    "public_service_evidence": [
+      "data/phase5/sources/fpc.txt"
+    ],
+    "intent_hypothesis": "見守り購入、留守番課題解決、保険/シッター検討",
+    "seo": {
+      "measurement": "unmeasured",
+      "google_rank": null,
+      "search_volume": null,
+      "risk_hypothesis": "機器の低単価だけでは必要送客が大きい。保険は医療/金融の専門性が必要。"
+    },
+    "uniqueness": "既存の出典付き3記事・7商品台帳。実機使用は未実施。",
+    "production_difficulty": "保険の助言は専門家確認が必要。機器更新は30日ごと。",
+    "partnership": "2,000円以上の実案件・報酬・成果地点は未確認。案件不存在とは断定しない。",
+    "monthly_cash_increment_now": 0,
+    "future_cost_unknown": [
+      "実機購入",
+      "専門家監修"
+    ],
+    "decision": "維持・増産停止。高単価案件が確認できた場合だけ再評価"
+  },
+  {
+    "id": "smb-web",
+    "name": "小規模事業者向けWordPress・Web運用",
+    "confirmed_fixed_2000_programs": [
+      "xserver-standard"
+    ],
+    "public_service_evidence": [
+      "data/phase5/sources/xserver-affiliate.txt",
+      "data/phase5/sources/conoha-affiliate.txt"
+    ],
+    "intent_hypothesis": "初回サイト立ち上げ・ホスト選択・移行・更新費用・復元",
+    "seo": {
+      "measurement": "unmeasured",
+      "google_rank": null,
+      "search_volume": null,
+      "observed_content": "ConoHa公式ページにワプ活のWordPress開始/収益化/テーマ記事の紹介あり。公式競合の存在のみ確認。Google順位は不明。",
+      "risk_hypothesis": "一般的なサーバー比較を狙うだけでは差別化不足。小規模事業の具体的運用課題へ絞る。"
+    },
+    "uniqueness": "このrepoのDocker/WordPress/REST下書き・復元テスト手順を自分の検証資料として作成可能。ホスト各社を使った性能レビューとは区別。",
+    "production_difficulty": "中〜高の編集仮説。セキュリティ/メール/DNSの検証、規約更新が必要。",
+    "partnership": "A8掲載あり、本人の提携審査・現行承認条件は未確認。ConoHaの本人単価は変動条件の確認待ち。",
+    "monthly_cash_increment_now": 0,
+    "future_cost_unknown": [
+      "新ドメイン/追加ホスト",
+      "他社契約での実機比較"
+    ],
+    "decision": "最優先の非公開並行検証候補。転換を確定しない"
+  },
+  {
+    "id": "team-saas",
+    "name": "BtoBチーム知識管理・業務効率化SaaS",
+    "confirmed_fixed_2000_programs": [],
+    "public_service_evidence": [
+      "data/phase5/sources/chatwork.txt",
+      "data/phase5/sources/rakko.txt"
+    ],
+    "intent_hypothesis": "チーム規模別の情報共有、権限、導入、乗換",
+    "seo": {
+      "measurement": "unmeasured",
+      "google_rank": null,
+      "search_volume": null,
+      "risk_hypothesis": "製品仕様/業務適合と実利用の独自性が必要。公式資料だけでは一般的比較になりやすい。"
+    },
+    "uniqueness": "匿名・架空の業務課題を明示したワークフロー/テンプレート設計は可能。未使用SaaSの体験を作らない。",
+    "production_difficulty": "高の仮説。複数ライセンスや利用者確認が必要になり得る。",
+    "partnership": "Chatwork販売代理店を一般SEOアフィリエイトと同一視しない。Notion取得403、ラッコキーワードは割合式で固定2,000円未確認。",
+    "monthly_cash_increment_now": 0,
+    "future_cost_unknown": [
+      "複数ユーザーの検証ライセンス"
+    ],
+    "decision": "案件確認前はモデル除外・次点調査"
+  },
+  {
+    "id": "ecommerce-saas",
+    "name": "EC立ち上げ・Shopify移行SaaS",
+    "confirmed_fixed_2000_programs": [],
+    "public_service_evidence": [
+      "data/phase5/sources/shopify.txt"
+    ],
+    "intent_hypothesis": "初回ECプラン選択、移行、費用、販売機能の適合",
+    "seo": {
+      "measurement": "unmeasured",
+      "google_rank": null,
+      "search_volume": null,
+      "risk_hypothesis": "地域別報酬、審査、EC実務、アプリ/決済の総費用確認が必要。"
+    },
+    "uniqueness": "移行要件・費用項目の比較企画。未作成店舗の実績を作らない。",
+    "production_difficulty": "高の仮説。デモ店舗/アプリ検証が必要だが新規アカウント作成は禁止。",
+    "partnership": "公式Affiliate存在/有料Basic,Grow,Advanced対象は確認。最大150USDを日本向け確定単価に使わない。",
+    "monthly_cash_increment_now": 0,
+    "future_cost_unknown": [
+      "プラン・アプリ・デモ検証費"
+    ],
+    "decision": "日本向け単価と検証許可が揃うまで保留"
+  },
+  {
+    "id": "specialist-comparison",
+    "name": "サイト売買・専門サービス比較",
+    "confirmed_fixed_2000_programs": [
+      "rakko-ma-listing"
+    ],
+    "public_service_evidence": [
+      "data/phase5/sources/rakko.txt",
+      "data/phase5/sources/rakko-qa.txt"
+    ],
+    "intent_hypothesis": "サイト売却の方法、案件掲載、手数料、移転/契約の確認",
+    "seo": {
+      "measurement": "unmeasured",
+      "google_rank": null,
+      "search_volume": null,
+      "risk_hypothesis": "案件掲載の対象になる売主母数は未取得。サイト売買の法務/評価の専門性が必要。"
+    },
+    "uniqueness": "出品前の技術・契約チェック。架空の売買経験や売却額を作らない。",
+    "production_difficulty": "高の仮説。価値評価や税務の断定を避け、専門家確認が必要。",
+    "partnership": "掲載開始2,750円の公開額は確認。本人条件/掲載審査の詳細と出金費を確認するまで公開検証不可。",
+    "monthly_cash_increment_now": 0,
+    "future_cost_unknown": [
+      "専門家レビュー・独自取材"
+    ],
+    "decision": "次点。資料確認段階に留める"
+  },
+  {
+    "id": "backoffice-saas",
+    "name": "会計・人事のバックオフィスSaaS",
+    "confirmed_fixed_2000_programs": [],
+    "public_service_evidence": [
+      "data/phase5/sources/freee.txt"
+    ],
+    "intent_hypothesis": "企業規模別選択、導入/移行、業務対応",
+    "seo": {
+      "measurement": "unmeasured",
+      "google_rank": null,
+      "search_volume": null,
+      "risk_hypothesis": "会計/労務の専門性、営業/導入支援の要件が重い。"
+    },
+    "uniqueness": "業務要件表は可能。未導入の業務実績を作らない。",
+    "production_difficulty": "高の仮説。法令更新・専門家確認が必要。",
+    "partnership": "確認したfreee SA/VARは新規募集停止。別の一般ASP案件の存在は未確認。",
+    "monthly_cash_increment_now": 0,
+    "future_cost_unknown": [
+      "専門家・有料検証ライセンス"
+    ],
+    "decision": "確認した制度での開始は不可。ジャンル全体に案件が無いとは断定しない"
+  }
+]

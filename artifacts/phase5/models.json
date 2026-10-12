@@ -1,0 +1,431 @@
+[
+  {
+    "assumptions": {
+      "name": "保守的・集客/送客とも弱い仮説",
+      "monthly_pv": 10000,
+      "outbound_ctr": 0.05,
+      "conversion_rate": 0.005,
+      "approval_rate": 0.6,
+      "monthly_cost_jpy": 3000,
+      "status": "PV/CTR/CVR/承認率は未検証仮説。報酬は別の確認済み案件から注入",
+      "reward_jpy": 5000
+    },
+    "revenue_jpy": "7500.000000",
+    "profit_jpy": "4500.000000",
+    "required_pv_for_target": 70667,
+    "target_profit_jpy": "50000",
+    "evidence_status": "hypothesis_not_forecast",
+    "external_api_calls": 0,
+    "program_id": "xserver-standard",
+    "status": "conditional_public_terms_model",
+    "reward_source": "https://www.xserver.ne.jp/affiliate.php",
+    "partner_approved": false,
+    "actual_revenue_jpy": null,
+    "warning": "Public reward confirmed; personal eligibility, approval and traffic remain unverified. Not a forecast.",
+    "required_approved_outcomes": 11
+  },
+  {
+    "assumptions": {
+      "name": "保守的・集客/送客とも弱い仮説",
+      "monthly_pv": 10000,
+      "outbound_ctr": 0.05,
+      "conversion_rate": 0.005,
+      "approval_rate": 0.6,
+      "monthly_cost_jpy": 3000,
+      "status": "PV/CTR/CVR/承認率は未検証仮説。報酬は別の確認済み案件から注入",
+      "reward_jpy": 5000
+    },
+    "revenue_jpy": "7500.000000",
+    "profit_jpy": "4500.000000",
+    "required_pv_for_target": 137334,
+    "target_profit_jpy": "100000",
+    "evidence_status": "hypothesis_not_forecast",
+    "external_api_calls": 0,
+    "program_id": "xserver-standard",
+    "status": "conditional_public_terms_model",
+    "reward_source": "https://www.xserver.ne.jp/affiliate.php",
+    "partner_approved": false,
+    "actual_revenue_jpy": null,
+    "warning": "Public reward confirmed; personal eligibility, approval and traffic remain unverified. Not a forecast.",
+    "required_approved_outcomes": 21
+  },
+  {
+    "assumptions": {
+      "name": "中間仮説",
+      "monthly_pv": 10000,
+      "outbound_ctr": 0.08,
+      "conversion_rate": 0.01,
+      "approval_rate": 0.6,
+      "monthly_cost_jpy": 3000,
+      "status": "PV/CTR/CVR/承認率は未検証仮説。報酬は別の確認済み案件から注入",
+      "reward_jpy": 5000
+    },
+    "revenue_jpy": "24000.00000",
+    "profit_jpy": "21000.00000",
+    "required_pv_for_target": 22084,
+    "target_profit_jpy": "50000",
+    "evidence_status": "hypothesis_not_forecast",
+    "external_api_calls": 0,
+    "program_id": "xserver-standard",
+    "status": "conditional_public_terms_model",
+    "reward_source": "https://www.xserver.ne.jp/affiliate.php",
+    "partner_approved": false,
+    "actual_revenue_jpy": null,
+    "warning": "Public reward confirmed; personal eligibility, approval and traffic remain unverified. Not a forecast.",
+    "required_approved_outcomes": 11
+  },
+  {
+    "assumptions": {
+      "name": "中間仮説",
+      "monthly_pv": 10000,
+      "outbound_ctr": 0.08,
+      "conversion_rate": 0.01,
+      "approval_rate": 0.6,
+      "monthly_cost_jpy": 3000,
+      "status": "PV/CTR/CVR/承認率は未検証仮説。報酬は別の確認済み案件から注入",
+      "reward_jpy": 5000
+    },
+    "revenue_jpy": "24000.00000",
+    "profit_jpy": "21000.00000",
+    "required_pv_for_target": 42917,
+    "target_profit_jpy": "100000",
+    "evidence_status": "hypothesis_not_forecast",
+    "external_api_calls": 0,
+    "program_id": "xserver-standard",
+    "status": "conditional_public_terms_model",
+    "reward_source": "https://www.xserver.ne.jp/affiliate.php",
+    "partner_approved": false,
+    "actual_revenue_jpy": null,
+    "warning": "Public reward confirmed; personal eligibility, approval and traffic remain unverified. Not a forecast.",
+    "required_approved_outcomes": 21
+  },
+  {
+    "assumptions": {
+      "name": "良好な送客・成約仮説",
+      "monthly_pv": 10000,
+      "outbound_ctr": 0.12,
+      "conversion_rate": 0.02,
+      "approval_rate": 0.8,
+      "monthly_cost_jpy": 3000,
+      "status": "未検証の改善ケース。実績/達成確率ではない",
+      "reward_jpy": 5000
+    },
+    "revenue_jpy": "96000.00000",
+    "profit_jpy": "93000.00000",
+    "required_pv_for_target": 5521,
+    "target_profit_jpy": "50000",
+    "evidence_status": "hypothesis_not_forecast",
+    "external_api_calls": 0,
+    "program_id": "xserver-standard",
+    "status": "conditional_public_terms_model",
+    "reward_source": "https://www.xserver.ne.jp/affiliate.php",
+    "partner_approved": false,
+    "actual_revenue_jpy": null,
+    "warning": "Public reward confirmed; personal eligibility, approval and traffic remain unverified. Not a forecast.",
+    "required_approved_outcomes": 11
+  },
+  {
+    "assumptions": {
+      "name": "良好な送客・成約仮説",
+      "monthly_pv": 10000,
+      "outbound_ctr": 0.12,
+      "conversion_rate": 0.02,
+      "approval_rate": 0.8,
+      "monthly_cost_jpy": 3000,
+      "status": "未検証の改善ケース。実績/達成確率ではない",
+      "reward_jpy": 5000
+    },
+    "revenue_jpy": "96000.00000",
+    "profit_jpy": "93000.00000",
+    "required_pv_for_target": 10730,
+    "target_profit_jpy": "100000",
+    "evidence_status": "hypothesis_not_forecast",
+    "external_api_calls": 0,
+    "program_id": "xserver-standard",
+    "status": "conditional_public_terms_model",
+    "reward_source": "https://www.xserver.ne.jp/affiliate.php",
+    "partner_approved": false,
+    "actual_revenue_jpy": null,
+    "warning": "Public reward confirmed; personal eligibility, approval and traffic remain unverified. Not a forecast.",
+    "required_approved_outcomes": 21
+  },
+  {
+    "assumptions": {
+      "name": "保守的・集客/送客とも弱い仮説",
+      "monthly_pv": 10000,
+      "outbound_ctr": 0.05,
+      "conversion_rate": 0.005,
+      "approval_rate": 0.6,
+      "monthly_cost_jpy": 3000,
+      "status": "PV/CTR/CVR/承認率は未検証仮説。報酬は別の確認済み案件から注入",
+      "reward_jpy": 2750
+    },
+    "revenue_jpy": "4125.000000",
+    "profit_jpy": "1125.000000",
+    "required_pv_for_target": 128485,
+    "target_profit_jpy": "50000",
+    "evidence_status": "hypothesis_not_forecast",
+    "external_api_calls": 0,
+    "program_id": "rakko-ma-listing",
+    "status": "conditional_public_terms_model",
+    "reward_source": "https://rakkoid.com/affiliate",
+    "partner_approved": false,
+    "actual_revenue_jpy": null,
+    "warning": "Public reward confirmed; personal eligibility, approval and traffic remain unverified. Not a forecast.",
+    "required_approved_outcomes": 20
+  },
+  {
+    "assumptions": {
+      "name": "保守的・集客/送客とも弱い仮説",
+      "monthly_pv": 10000,
+      "outbound_ctr": 0.05,
+      "conversion_rate": 0.005,
+      "approval_rate": 0.6,
+      "monthly_cost_jpy": 3000,
+      "status": "PV/CTR/CVR/承認率は未検証仮説。報酬は別の確認済み案件から注入",
+      "reward_jpy": 2750
+    },
+    "revenue_jpy": "4125.000000",
+    "profit_jpy": "1125.000000",
+    "required_pv_for_target": 249697,
+    "target_profit_jpy": "100000",
+    "evidence_status": "hypothesis_not_forecast",
+    "external_api_calls": 0,
+    "program_id": "rakko-ma-listing",
+    "status": "conditional_public_terms_model",
+    "reward_source": "https://rakkoid.com/affiliate",
+    "partner_approved": false,
+    "actual_revenue_jpy": null,
+    "warning": "Public reward confirmed; personal eligibility, approval and traffic remain unverified. Not a forecast.",
+    "required_approved_outcomes": 38
+  },
+  {
+    "assumptions": {
+      "name": "中間仮説",
+      "monthly_pv": 10000,
+      "outbound_ctr": 0.08,
+      "conversion_rate": 0.01,
+      "approval_rate": 0.6,
+      "monthly_cost_jpy": 3000,
+      "status": "PV/CTR/CVR/承認率は未検証仮説。報酬は別の確認済み案件から注入",
+      "reward_jpy": 2750
+    },
+    "revenue_jpy": "13200.00000",
+    "profit_jpy": "10200.00000",
+    "required_pv_for_target": 40152,
+    "target_profit_jpy": "50000",
+    "evidence_status": "hypothesis_not_forecast",
+    "external_api_calls": 0,
+    "program_id": "rakko-ma-listing",
+    "status": "conditional_public_terms_model",
+    "reward_source": "https://rakkoid.com/affiliate",
+    "partner_approved": false,
+    "actual_revenue_jpy": null,
+    "warning": "Public reward confirmed; personal eligibility, approval and traffic remain unverified. Not a forecast.",
+    "required_approved_outcomes": 20
+  },
+  {
+    "assumptions": {
+      "name": "中間仮説",
+      "monthly_pv": 10000,
+      "outbound_ctr": 0.08,
+      "conversion_rate": 0.01,
+      "approval_rate": 0.6,
+      "monthly_cost_jpy": 3000,
+      "status": "PV/CTR/CVR/承認率は未検証仮説。報酬は別の確認済み案件から注入",
+      "reward_jpy": 2750
+    },
+    "revenue_jpy": "13200.00000",
+    "profit_jpy": "10200.00000",
+    "required_pv_for_target": 78031,
+    "target_profit_jpy": "100000",
+    "evidence_status": "hypothesis_not_forecast",
+    "external_api_calls": 0,
+    "program_id": "rakko-ma-listing",
+    "status": "conditional_public_terms_model",
+    "reward_source": "https://rakkoid.com/affiliate",
+    "partner_approved": false,
+    "actual_revenue_jpy": null,
+    "warning": "Public reward confirmed; personal eligibility, approval and traffic remain unverified. Not a forecast.",
+    "required_approved_outcomes": 38
+  },
+  {
+    "assumptions": {
+      "name": "良好な送客・成約仮説",
+      "monthly_pv": 10000,
+      "outbound_ctr": 0.12,
+      "conversion_rate": 0.02,
+      "approval_rate": 0.8,
+      "monthly_cost_jpy": 3000,
+      "status": "未検証の改善ケース。実績/達成確率ではない",
+      "reward_jpy": 2750
+    },
+    "revenue_jpy": "52800.00000",
+    "profit_jpy": "49800.00000",
+    "required_pv_for_target": 10038,
+    "target_profit_jpy": "50000",
+    "evidence_status": "hypothesis_not_forecast",
+    "external_api_calls": 0,
+    "program_id": "rakko-ma-listing",
+    "status": "conditional_public_terms_model",
+    "reward_source": "https://rakkoid.com/affiliate",
+    "partner_approved": false,
+    "actual_revenue_jpy": null,
+    "warning": "Public reward confirmed; personal eligibility, approval and traffic remain unverified. Not a forecast.",
+    "required_approved_outcomes": 20
+  },
+  {
+    "assumptions": {
+      "name": "良好な送客・成約仮説",
+      "monthly_pv": 10000,
+      "outbound_ctr": 0.12,
+      "conversion_rate": 0.02,
+      "approval_rate": 0.8,
+      "monthly_cost_jpy": 3000,
+      "status": "未検証の改善ケース。実績/達成確率ではない",
+      "reward_jpy": 2750
+    },
+    "revenue_jpy": "52800.00000",
+    "profit_jpy": "49800.00000",
+    "required_pv_for_target": 19508,
+    "target_profit_jpy": "100000",
+    "evidence_status": "hypothesis_not_forecast",
+    "external_api_calls": 0,
+    "program_id": "rakko-ma-listing",
+    "status": "conditional_public_terms_model",
+    "reward_source": "https://rakkoid.com/affiliate",
+    "partner_approved": false,
+    "actual_revenue_jpy": null,
+    "warning": "Public reward confirmed; personal eligibility, approval and traffic remain unverified. Not a forecast.",
+    "required_approved_outcomes": 38
+  },
+  {
+    "program_id": "conoha-wing",
+    "status": "excluded",
+    "reasons": [
+      "reward_or_outcome_not_verified",
+      "fixed_positive_jpy_reward_required",
+      "availability_unverified_or_closed",
+      "evidence_missing_or_invalid"
+    ],
+    "required_pv": null,
+    "actual_revenue_jpy": null
+  },
+  {
+    "program_id": "pet-fpc",
+    "status": "excluded",
+    "reasons": [
+      "reward_or_outcome_not_verified",
+      "fixed_positive_jpy_reward_required",
+      "currency_not_jpy",
+      "availability_unverified_or_closed",
+      "evidence_missing_or_invalid"
+    ],
+    "required_pv": null,
+    "actual_revenue_jpy": null
+  },
+  {
+    "program_id": "pet-food",
+    "status": "excluded",
+    "reasons": [
+      "reward_or_outcome_not_verified",
+      "fixed_positive_jpy_reward_required",
+      "currency_not_jpy",
+      "availability_unverified_or_closed",
+      "evidence_missing_or_invalid"
+    ],
+    "required_pv": null,
+    "actual_revenue_jpy": null
+  },
+  {
+    "program_id": "pet-sitter",
+    "status": "excluded",
+    "reasons": [
+      "reward_or_outcome_not_verified",
+      "fixed_positive_jpy_reward_required",
+      "currency_not_jpy",
+      "availability_unverified_or_closed",
+      "evidence_missing_or_invalid"
+    ],
+    "required_pv": null,
+    "actual_revenue_jpy": null
+  },
+  {
+    "program_id": "team-notion",
+    "status": "excluded",
+    "reasons": [
+      "reward_or_outcome_not_verified",
+      "fixed_positive_jpy_reward_required",
+      "currency_not_jpy",
+      "availability_unverified_or_closed",
+      "evidence_missing_or_invalid"
+    ],
+    "required_pv": null,
+    "actual_revenue_jpy": null
+  },
+  {
+    "program_id": "team-chatwork",
+    "status": "excluded",
+    "reasons": [
+      "reward_or_outcome_not_verified",
+      "fixed_positive_jpy_reward_required",
+      "currency_not_jpy",
+      "availability_unverified_or_closed",
+      "evidence_missing_or_invalid"
+    ],
+    "required_pv": null,
+    "actual_revenue_jpy": null
+  },
+  {
+    "program_id": "ecommerce-shopify",
+    "status": "excluded",
+    "reasons": [
+      "reward_or_outcome_not_verified",
+      "fixed_positive_jpy_reward_required",
+      "currency_not_jpy",
+      "availability_unverified_or_closed",
+      "evidence_missing_or_invalid"
+    ],
+    "required_pv": null,
+    "actual_revenue_jpy": null
+  },
+  {
+    "program_id": "backoffice-freee",
+    "status": "excluded",
+    "reasons": [
+      "reward_or_outcome_not_verified",
+      "fixed_positive_jpy_reward_required",
+      "currency_not_jpy",
+      "availability_unverified_or_closed",
+      "evidence_missing_or_invalid"
+    ],
+    "required_pv": null,
+    "actual_revenue_jpy": null
+  },
+  {
+    "program_id": "seo-rakko-keyword",
+    "status": "excluded",
+    "reasons": [
+      "reward_or_outcome_not_verified",
+      "fixed_positive_jpy_reward_required",
+      "currency_not_jpy",
+      "availability_unverified_or_closed",
+      "evidence_missing_or_invalid"
+    ],
+    "required_pv": null,
+    "actual_revenue_jpy": null
+  },
+  {
+    "program_id": "pet-furbo",
+    "status": "excluded",
+    "reasons": [
+      "reward_or_outcome_not_verified",
+      "fixed_positive_jpy_reward_required",
+      "currency_not_jpy",
+      "availability_unverified_or_closed",
+      "evidence_missing_or_invalid"
+    ],
+    "required_pv": null,
+    "actual_revenue_jpy": null
+  }
+]

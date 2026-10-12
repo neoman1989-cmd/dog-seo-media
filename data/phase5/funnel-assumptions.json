@@ -1,0 +1,5 @@
+[
+ {"name":"保守的・集客/送客とも弱い仮説","monthly_pv":10000,"outbound_ctr":0.05,"conversion_rate":0.005,"approval_rate":0.6,"monthly_cost_jpy":3000,"status":"PV/CTR/CVR/承認率は未検証仮説。報酬は別の確認済み案件から注入"},
+ {"name":"中間仮説","monthly_pv":10000,"outbound_ctr":0.08,"conversion_rate":0.01,"approval_rate":0.6,"monthly_cost_jpy":3000,"status":"PV/CTR/CVR/承認率は未検証仮説。報酬は別の確認済み案件から注入"},
+ {"name":"良好な送客・成約仮説","monthly_pv":10000,"outbound_ctr":0.12,"conversion_rate":0.02,"approval_rate":0.8,"monthly_cost_jpy":3000,"status":"未検証の改善ケース。実績/達成確率ではない"}
+]
