@@ -1,0 +1,188 @@
+[
+  {
+    "name": "A8.net",
+    "public": [
+      {
+        "quote": "今すぐ会員登録 (無料)",
+        "url": "https://www.a8.net/",
+        "text_file": "data/phase4/a8.txt",
+        "sha256": "32c4a014e49e03d22626bf1e33483d30f491f5ff176c47364ef27bf8208fcf82",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      },
+      {
+        "quote": "成果報酬を受け取ることができるサービスを提供しています。",
+        "url": "https://www.a8.net/",
+        "text_file": "data/phase4/a8.txt",
+        "sha256": "32c4a014e49e03d22626bf1e33483d30f491f5ff176c47364ef27bf8208fcf82",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      }
+    ],
+    "candidate_channels": [
+      "ペット用品・見守り・シッター等の案件を登録後検索する候補。存在未確認。"
+    ],
+    "login_only": [
+      "案件の存在・販売対象",
+      "成果地点",
+      "個別報酬",
+      "承認率・否認条件",
+      "提携審査と広告素材"
+    ],
+    "confirmed_pet_programs": null,
+    "application_status": "not_applied"
+  },
+  {
+    "name": "もしもアフィリエイト",
+    "public": [
+      {
+        "quote": "「かんたんリンク」でAmazon・楽天の広告リンクを簡単に作ることができます。",
+        "url": "https://af.moshimo.com/",
+        "text_file": "data/phase4/moshimo.txt",
+        "sha256": "211ee07c869bc6ae58e1b2cf7fc805b8902f9325e8af68bd21df5100cd13f341",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      },
+      {
+        "quote": "通常報酬＋12%のボーナス報酬を提供。",
+        "url": "https://af.moshimo.com/",
+        "text_file": "data/phase4/moshimo.txt",
+        "sha256": "211ee07c869bc6ae58e1b2cf7fc805b8902f9325e8af68bd21df5100cd13f341",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      },
+      {
+        "quote": "※一部対象外プロモーションあり。",
+        "url": "https://af.moshimo.com/",
+        "text_file": "data/phase4/moshimo.txt",
+        "sha256": "211ee07c869bc6ae58e1b2cf7fc805b8902f9325e8af68bd21df5100cd13f341",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      }
+    ],
+    "candidate_channels": [
+      "Amazon・楽天の商品リンク。対象商品と提携条件は未確認。"
+    ],
+    "login_only": [
+      "対象プログラムへの参加条件",
+      "ペットカメラ個別商品",
+      "W報酬の適用可否",
+      "個別料率・成果承認"
+    ],
+    "confirmed_pet_programs": null,
+    "application_status": "not_applied"
+  },
+  {
+    "name": "バリューコマース",
+    "public": [
+      {
+        "quote": "バリューコマース アフィリエイトに参加中の広告主",
+        "url": "https://www.valuecommerce.ne.jp/",
+        "text_file": "data/phase4/valuecommerce.txt",
+        "sha256": "97fba74f40b6061e2176d24f361d83212e77f05e4c86557979e58b41831b7892",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      }
+    ],
+    "candidate_channels": [
+      "公開広告主とECプログラムの確認候補。ペット専用案件は未確認。"
+    ],
+    "login_only": [
+      "現在の広告主案件",
+      "対象商品・サービス",
+      "個別報酬・特別条件",
+      "成果承認・提携審査"
+    ],
+    "confirmed_pet_programs": null,
+    "application_status": "not_applied"
+  },
+  {
+    "name": "Amazonアソシエイト",
+    "public": [
+      {
+        "quote": "適格販売およびプログラムの紹介料は、商品カテゴリーによって異なります。",
+        "url": "https://affiliate.amazon.co.jp/",
+        "text_file": "data/phase4/amazon.txt",
+        "sha256": "bbfd0110a96c31706b48f6b00551fdd04a90e21f04d820fc235822a9137c9fb6",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      },
+      {
+        "quote": "参加登録にあたりましては審査がございます",
+        "url": "https://affiliate.amazon.co.jp/",
+        "text_file": "data/phase4/amazon.txt",
+        "sha256": "bbfd0110a96c31706b48f6b00551fdd04a90e21f04d820fc235822a9137c9fb6",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      }
+    ],
+    "candidate_channels": [
+      "公開商品販売ページが存在するeufy等のEC紹介候補。適格性・承認は未確認。"
+    ],
+    "login_only": [
+      "本人の参加承認・トラッキングID",
+      "個別注文の適格性・成果レポート"
+    ],
+    "public_unavailable": [
+      "日本向けカテゴリー別紹介料表は403で未取得。最大10%をペットカメラの料率として使わない。"
+    ],
+    "confirmed_pet_programs": null,
+    "application_status": "not_applied"
+  },
+  {
+    "name": "楽天アフィリエイト",
+    "public": [
+      {
+        "quote": "家電 2%",
+        "url": "https://affiliate.rakuten.co.jp/guideline/rule/#anchor-02-01",
+        "text_file": "data/phase4/rakuten.txt",
+        "sha256": "afd5d40adab999f6d3c0a9a5b82840ac3d59a6b1a1d8814b1d7201a8c98f8dec",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      },
+      {
+        "quote": "TV・オーディオ・カメラ 2%",
+        "url": "https://affiliate.rakuten.co.jp/guideline/rule/#anchor-02-01",
+        "text_file": "data/phase4/rakuten.txt",
+        "sha256": "afd5d40adab999f6d3c0a9a5b82840ac3d59a6b1a1d8814b1d7201a8c98f8dec",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      },
+      {
+        "quote": "成果報酬の上限は、1商品1個の売上につき1,000円とします",
+        "url": "https://affiliate.rakuten.co.jp/guideline/rule/#anchor-02-01",
+        "text_file": "data/phase4/rakuten.txt",
+        "sha256": "afd5d40adab999f6d3c0a9a5b82840ac3d59a6b1a1d8814b1d7201a8c98f8dec",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      },
+      {
+        "quote": "1ユーザあたり月3,000円とします",
+        "url": "https://affiliate.rakuten.co.jp/guideline/rule/#anchor-02-01",
+        "text_file": "data/phase4/rakuten.txt",
+        "sha256": "afd5d40adab999f6d3c0a9a5b82840ac3d59a6b1a1d8814b1d7201a8c98f8dec",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      },
+      {
+        "quote": "アフィリエイトリンクのクリック後24時間以内に「買い物かご」に入れ、クリック後89日以内に購入を完了",
+        "url": "https://affiliate.rakuten.co.jp/guideline/rule/#anchor-02-01",
+        "text_file": "data/phase4/rakuten.txt",
+        "sha256": "afd5d40adab999f6d3c0a9a5b82840ac3d59a6b1a1d8814b1d7201a8c98f8dec",
+        "checked_on": "2026-10-12",
+        "scope": "public_document_only"
+      }
+    ],
+    "candidate_channels": [
+      "楽天市場のペットカメラ・関連用品。商品のジャンル分類・対象店舗の確認が必要。"
+    ],
+    "login_only": [
+      "本人に適用される特別料率",
+      "対象商品の実際のジャンル",
+      "成果承認・料率アップ適用"
+    ],
+    "exclusions": "料率アップ対象の上限適用除外などは公式ページで別途確認。個別商品の報酬を一律2%と断定しない。",
+    "confirmed_pet_programs": null,
+    "application_status": "not_applied"
+  }
+]

@@ -561,5 +561,238 @@
     "price_yen": null,
     "price_kind": null,
     "affiliate_url": null
+  },
+  {
+    "id": "eufy-e220",
+    "name": "Eufy Indoor Cam 2K Pan & Tilt（Indoor Cam E220）",
+    "source_url": "https://www.ankerjapan.com/products/t8410",
+    "source_urls": [
+      "https://www.ankerjapan.com/products/t8410"
+    ],
+    "category": "ペットカメラ",
+    "verified_on": "2026-10-12",
+    "official_link_status": "confirmed_official",
+    "status": "official_text_reviewed",
+    "demo": false,
+    "facts": {
+      "resolution": {
+        "status": "verified",
+        "value": "最大2K（約300万画素）",
+        "quote": "最大2K（約300万画素）",
+        "source_url": "https://www.ankerjapan.com/products/t8410",
+        "text_file": "data/evidence/eufy-e220.txt",
+        "sha256": "1f5844c60543a6142bd1ce8222a27872c2c1e90d66e19921b658a714345e7c58",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（メーカー説明欄と照合。口コミ・実使用体験は採用しない）",
+        "reviewed_claim_hash": "73343fa00bf95f58481c55f36f68d8aad5b37fcb7e5ddd3f43a8e40890af43ad"
+      },
+      "recording": {
+        "status": "verified",
+        "value": "記録媒体 microSDカード / NAS (ネットワークHDD)",
+        "quote": "記録媒体 microSDカード / NAS (ネットワークHDD)",
+        "source_url": "https://www.ankerjapan.com/products/t8410",
+        "text_file": "data/evidence/eufy-e220.txt",
+        "sha256": "1f5844c60543a6142bd1ce8222a27872c2c1e90d66e19921b658a714345e7c58",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（メーカー説明欄と照合。口コミ・実使用体験は採用しない）",
+        "reviewed_claim_hash": "d7771db96a278346ae0160617f77a3ee6a720121fcf7d89ce3b5407dd7240bf8"
+      },
+      "notifications": {
+        "status": "verified",
+        "value": "カメラに搭載されたAIがお部屋で動きを検知すると、お使いのスマホに通知を送ります。",
+        "quote": "カメラに搭載されたAIがお部屋で動きを検知すると、お使いのスマホに通知を送ります。",
+        "source_url": "https://www.ankerjapan.com/products/t8410",
+        "text_file": "data/evidence/eufy-e220.txt",
+        "sha256": "1f5844c60543a6142bd1ce8222a27872c2c1e90d66e19921b658a714345e7c58",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（メーカー説明欄と照合。口コミ・実使用体験は採用しない）",
+        "reviewed_claim_hash": "b53bdc16e9e066fb7d091bc00a438d985e150fc56c5802f1d9220ae5676f75bb"
+      },
+      "monthly_service": {
+        "status": "unknown",
+        "value": null,
+        "source_url": "https://www.ankerjapan.com/products/t8410",
+        "verified_on": null,
+        "reason": "この商品の取得公式本文で条件を確認できず。未取得を無料・非対応とみなさない。"
+      },
+      "price": {
+        "status": "verified",
+        "value": "¥5,990 (税込)",
+        "quote": "¥5,990 (税込)",
+        "source_url": "https://www.ankerjapan.com/products/t8410",
+        "text_file": "data/evidence/eufy-e220.txt",
+        "sha256": "1f5844c60543a6142bd1ce8222a27872c2c1e90d66e19921b658a714345e7c58",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（メーカー説明欄と照合。口コミ・実使用体験は採用しない）",
+        "reviewed_claim_hash": "7d2ffd6feb6dcb2894bd2cecc2a9d754633feee7491371c8ef6629aa62249959"
+      },
+      "wifi": {
+        "status": "verified",
+        "value": "接続タイプ (2.4GHz) Wi-Fi",
+        "quote": "接続タイプ (2.4GHz) Wi-Fi",
+        "source_url": "https://www.ankerjapan.com/products/t8410",
+        "text_file": "data/evidence/eufy-e220.txt",
+        "sha256": "1f5844c60543a6142bd1ce8222a27872c2c1e90d66e19921b658a714345e7c58",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（メーカー説明欄と照合。口コミ・実使用体験は採用しない）",
+        "reviewed_claim_hash": "4497d627f672ec6b29a40ab602e3220e39fda9372a3e16cb3fb266b41f067021"
+      },
+      "audio": {
+        "status": "verified",
+        "value": "通話機能 双方向通話",
+        "quote": "通話機能 双方向通話",
+        "source_url": "https://www.ankerjapan.com/products/t8410",
+        "text_file": "data/evidence/eufy-e220.txt",
+        "sha256": "1f5844c60543a6142bd1ce8222a27872c2c1e90d66e19921b658a714345e7c58",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（メーカー説明欄と照合。口コミ・実使用体験は採用しない）",
+        "reviewed_claim_hash": "e7c4cb14c3a8e1a1884ab65199fe5274594a07f82d0651f7526f868eb35560a7"
+      },
+      "purchase_terms": {
+        "status": "verified",
+        "value": "在庫切れ Sold Out",
+        "quote": "在庫切れ Sold Out",
+        "source_url": "https://www.ankerjapan.com/products/t8410",
+        "text_file": "data/evidence/eufy-e220.txt",
+        "sha256": "1f5844c60543a6142bd1ce8222a27872c2c1e90d66e19921b658a714345e7c58",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式説明欄の契約・販売条件）",
+        "reviewed_claim_hash": "dfc19f81639127d4608ab9cdb6b51b8bfc4f456a46530e4e3c6b649a437a8589"
+      }
+    },
+    "features": [
+      "最大2K（約300万画素）"
+    ],
+    "price_yen": 5990,
+    "monthly_fee_jpy": null,
+    "affiliate_url": null,
+    "affiliate": {
+      "status": "not_partnered",
+      "asp": null,
+      "approval_id": null,
+      "url": null
+    },
+    "missing_information": [
+      "monthly_service"
+    ],
+    "scope_note": "取得時点の公式表示。キャンペーン価格を恒常的価格や本体単独購入価格と断定しない。使用体験・動作精度は未検証。",
+    "availability_note": "取得本文に在庫切れ/Sold Out表記あり。現時点の購入可否は販売元で確認。",
+    "price_kind": "official_displayed_price"
+  },
+  {
+    "id": "furbo-mini-360",
+    "name": "Furboミニ 360°ビュー",
+    "source_url": "https://furbo.com/jp/products/furbo-mini-360",
+    "source_urls": [
+      "https://furbo.com/jp/products/furbo-mini-360"
+    ],
+    "category": "ペットカメラ",
+    "verified_on": "2026-10-12",
+    "official_link_status": "confirmed_official",
+    "status": "official_text_reviewed",
+    "demo": false,
+    "facts": {
+      "resolution": {
+        "status": "verified",
+        "value": "2K高画質×回転360°ビュー",
+        "quote": "2K高画質×回転360°ビュー",
+        "source_url": "https://furbo.com/jp/products/furbo-mini-360",
+        "text_file": "data/evidence/furbo-mini-360.txt",
+        "sha256": "e7f46f078acbe4e649597e6154e90b36ce9e847e0e037225163f90db9b84ed6a",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（メーカー説明欄と照合。口コミ・実使用体験は採用しない）",
+        "reviewed_claim_hash": "dc8bc971a3b19795ff6beb4199440ff1e239ad7db36f5323a7657bda7a28917d"
+      },
+      "recording": {
+        "status": "verified",
+        "value": "Furboシッター機能 自動追尾 （自動録画あり） 自動録画履歴",
+        "quote": "Furboシッター機能 自動追尾 （自動録画あり） 自動録画履歴",
+        "source_url": "https://furbo.com/jp/products/furbo-mini-360",
+        "text_file": "data/evidence/furbo-mini-360.txt",
+        "sha256": "e7f46f078acbe4e649597e6154e90b36ce9e847e0e037225163f90db9b84ed6a",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（メーカー説明欄と照合。口コミ・実使用体験は採用しない）",
+        "reviewed_claim_hash": "f59c52da1258cd989f23d64e54429b936c7cbf12b04487830d65519466c80833"
+      },
+      "notifications": {
+        "status": "verified",
+        "value": "ワンワン通知 （吠え声検知）",
+        "quote": "ワンワン通知 （吠え声検知）",
+        "source_url": "https://furbo.com/jp/products/furbo-mini-360",
+        "text_file": "data/evidence/furbo-mini-360.txt",
+        "sha256": "e7f46f078acbe4e649597e6154e90b36ce9e847e0e037225163f90db9b84ed6a",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（メーカー説明欄と照合。口コミ・実使用体験は採用しない）",
+        "reviewed_claim_hash": "44fa8d8483b42bb95751d5589716f2542cb2b1bd7075c037e333699243c92466"
+      },
+      "monthly_service": {
+        "status": "verified",
+        "value": "Furboシッタープランを選択（AI見守りサブスク）",
+        "quote": "Furboシッタープランを選択（AI見守りサブスク）",
+        "source_url": "https://furbo.com/jp/products/furbo-mini-360",
+        "text_file": "data/evidence/furbo-mini-360.txt",
+        "sha256": "e7f46f078acbe4e649597e6154e90b36ce9e847e0e037225163f90db9b84ed6a",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（メーカー説明欄と照合。口コミ・実使用体験は採用しない）",
+        "reviewed_claim_hash": "cb3a053914df3fd6c25d0e2c6e1a8ab06622d316a5d4953ea7c82c3dfeb7122f"
+      },
+      "price": {
+        "status": "verified",
+        "value": "Furboミニ 360°ビュー ￥3,180 original price is ￥19,980 ⓘ Furboシッタープランを選択（AI見守りサブスク）",
+        "quote": "Furboミニ 360°ビュー ￥3,180 original price is ￥19,980 ⓘ Furboシッタープランを選択（AI見守りサブスク）",
+        "source_url": "https://furbo.com/jp/products/furbo-mini-360",
+        "text_file": "data/evidence/furbo-mini-360.txt",
+        "sha256": "e7f46f078acbe4e649597e6154e90b36ce9e847e0e037225163f90db9b84ed6a",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（メーカー説明欄と照合。口コミ・実使用体験は採用しない）",
+        "reviewed_claim_hash": "a058b603de09ab995620b27340842ac6e6dcb7b57d0a73f0c2bba564f2cb7df9"
+      },
+      "wifi": {
+        "status": "unknown",
+        "value": null,
+        "source_url": "https://furbo.com/jp/products/furbo-mini-360",
+        "verified_on": null,
+        "reason": "この商品の取得公式本文で条件を確認できず。未取得を無料・非対応とみなさない。"
+      },
+      "audio": {
+        "status": "verified",
+        "value": "リアルタイム双方向会話",
+        "quote": "リアルタイム双方向会話",
+        "source_url": "https://furbo.com/jp/products/furbo-mini-360",
+        "text_file": "data/evidence/furbo-mini-360.txt",
+        "sha256": "e7f46f078acbe4e649597e6154e90b36ce9e847e0e037225163f90db9b84ed6a",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（メーカー説明欄と照合。口コミ・実使用体験は採用しない）",
+        "reviewed_claim_hash": "5c951a16421fc4b1e0e334672f46b5502c7447cb5d2fe1f034783a949ed14bc6"
+      },
+      "purchase_terms": {
+        "status": "verified",
+        "value": "1年契約 初年度 – 30%オフ",
+        "quote": "1年契約 初年度 – 30%オフ",
+        "source_url": "https://furbo.com/jp/products/furbo-mini-360",
+        "text_file": "data/evidence/furbo-mini-360.txt",
+        "sha256": "e7f46f078acbe4e649597e6154e90b36ce9e847e0e037225163f90db9b84ed6a",
+        "verified_on": "2026-10-12",
+        "reviewer": "Codex（公式説明欄の契約・販売条件）",
+        "reviewed_claim_hash": "a8ecaddc773ee4bf6509cadb77a580064a0438aea22114d1992916463210ed8a"
+      }
+    },
+    "features": [
+      "2K高画質×回転360°ビュー"
+    ],
+    "price_yen": null,
+    "monthly_fee_jpy": null,
+    "affiliate_url": null,
+    "affiliate": {
+      "status": "not_partnered",
+      "asp": null,
+      "approval_id": null,
+      "url": null
+    },
+    "missing_information": [
+      "wifi"
+    ],
+    "scope_note": "取得時点の公式表示。キャンペーン価格を恒常的価格や本体単独購入価格と断定しない。使用体験・動作精度は未検証。",
+    "purchase_caveat": "本体割引はFurboシッタープラン選択と一緒に表示。標準プランの取得表示は月換算￥559/年間￥6,704、1年契約・初年度30%オフ。更新条件・最終総額は契約前確認。単純に本体だけ￥3,180で利用可能とはしない。"
   }
 ]

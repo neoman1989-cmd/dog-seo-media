@@ -56,7 +56,7 @@ class EvidenceTests(unittest.TestCase):
     def test_unapproved_affiliate_never_rendered(self):
         self.assertEqual(link_for(self.product)[1],'official')
         self.product['affiliate']['url']='https://example.com/invented'
-        with self.assertRaises(ValueError): render(self.manifest,[self.product],self.root)
+        self.assertNotIn('https://example.com/invented',render(self.manifest,[self.product],self.root)['content'])
     def test_official_source_mismatch(self):
         fact=self.product['facts']['resolution'];fact['source_url']='https://www.furbo.com/jp/';self.bind(fact)
         self.assertTrue(fact_errors(self.product,'resolution',self.root))

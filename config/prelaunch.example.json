@@ -1,0 +1,15 @@
+{
+ "owner_launch_approved": false,
+ "owner_billing_approved": false,
+ "domain_and_host_quote_confirmed": false,
+ "staging_smoke_passed": false,
+ "backup_restore_tested": false,
+ "privacy_and_ad_policy_reviewed": false,
+ "sources_and_stock_rechecked": false,
+ "official_links_or_approved_ads_tested": false,
+ "search_console_ownership_confirmed": false,
+ "analytics_consent_tested": false,
+ "monetization_hypothesis_reviewed": false,
+ "initial_cost_jpy": null,
+ "monthly_total_cost_jpy": null
+}

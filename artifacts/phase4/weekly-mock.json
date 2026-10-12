@@ -1,0 +1,19 @@
+{
+  "data_label": "synthetic_fixture_not_site_performance",
+  "pages": [
+    {
+      "page": "https://example.invalid/camera/",
+      "clicks": 12,
+      "impressions": 300,
+      "ctr": "0.04",
+      "position": "12",
+      "source": "synthetic_fixture",
+      "click_delta": 4,
+      "ctr_delta": "0.00",
+      "action": "manual_intent_and_internal_link_review"
+    }
+  ],
+  "automatic_rewrite": false,
+  "automatic_publication": false,
+  "scope_note": "Search Console averaged positions are not fixed rankings. Actions are editorial hypotheses."
+}

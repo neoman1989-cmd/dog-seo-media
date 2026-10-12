@@ -30,3 +30,5 @@ python -m seo_media.engine generate --mode mock
 WordPress実表示の再現手順・スクリーンショット・検証結果: [ローカル検証](docs/wordpress-validation.md)。
 
 Phase 3: [公式商品台帳](data/research/products.json)、[キーワード10件](data/research/keywords.json)、[3記事と出典検査の仕様](docs/phase3.md)、[Search Console/GA4設計](docs/analytics-plan.md)。実商品データはモック台帳とは別に管理しています。
+
+Phase 4（記事増産より収益検証）: [試算・ASP調査](docs/phase4/profitability.md)、[競合調査の制約](docs/phase4/competition.md)、[移行と費用](docs/phase4/migration.md)、[接続・週次運用](docs/phase4/operations.md)、[オーナー作業と公開前チェック](docs/phase4/checklist.md)。

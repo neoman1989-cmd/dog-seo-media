@@ -1,0 +1,9 @@
+{
+  "url": "https://affiliate.amazon.co.jp/",
+  "checked_at": "2026-10-12T17:13:33.401213+09:00",
+  "status": "captured",
+  "final_url": "https://affiliate.amazon.co.jp/",
+  "text_file": "data/phase4/amazon.txt",
+  "sha256": "bbfd0110a96c31706b48f6b00551fdd04a90e21f04d820fc235822a9137c9fb6",
+  "raw_sha256": "af1de08a7f0822afe4ecc61a592b9bc0c9e9ffb4d7366e1f5c7f4fb94da81e6f"
+}

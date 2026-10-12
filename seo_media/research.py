@@ -8,7 +8,7 @@ import urllib.request
 import urllib.parse
 from zoneinfo import ZoneInfo
 
-ALLOWED_HOSTS = {'www.tp-link.com','www.tapo.com','www.furbo.com','furbo.com'}
+ALLOWED_HOSTS = {'www.tp-link.com','www.tapo.com','www.furbo.com','furbo.com','www.ankerjapan.com'}
 class Text(HTMLParser):
     def __init__(self): super().__init__(); self.parts=[]; self.hidden=0
     def handle_starttag(self, tag, attrs):
