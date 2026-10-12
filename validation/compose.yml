@@ -1,0 +1,53 @@
+services:
+  db:
+    image: mariadb:11.4
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: ${LOCAL_DB_PASSWORD:?create validation/.env}
+      MARIADB_ROOT_PASSWORD: ${LOCAL_DB_ROOT_PASSWORD:?create validation/.env}
+    volumes:
+      - db:/var/lib/mysql
+    networks: [isolated]
+    healthcheck:
+      test: [CMD, healthcheck.sh, --connect, --innodb_initialized]
+      interval: 3s
+      timeout: 3s
+      retries: 40
+  wordpress:
+    image: wordpress:6.8.3-php8.3-apache
+    ports: ['127.0.0.1:8080:80']
+    environment: &wp-env
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: ${LOCAL_DB_PASSWORD}
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_CONFIG_EXTRA: |
+        define('DISABLE_WP_CRON', true);
+        define('AUTOMATIC_UPDATER_DISABLED', true);
+        define('WP_HTTP_BLOCK_EXTERNAL', true);
+    volumes: &wp-volumes
+      - wp:/var/www/html
+      - ../wordpress/dog-seo:/var/www/html/wp-content/themes/dog-seo:ro
+      - ../wordpress/comparison-template.html:/fixtures/comparison.html:ro
+      - ./seed.sh:/fixtures/seed.sh:ro
+    networks: [isolated]
+    depends_on:
+      db: {condition: service_healthy}
+  cli:
+    image: wordpress:cli-php8.3
+    user: '33:33'
+    environment:
+      <<: *wp-env
+      LOCAL_WP_PASSWORD: ${LOCAL_WP_PASSWORD:?create validation/.env}
+    volumes: *wp-volumes
+    networks: [isolated]
+    depends_on:
+      db: {condition: service_healthy}
+    entrypoint: [sh, /fixtures/seed.sh]
+volumes:
+  db:
+  wp:
+networks:
+  isolated:
+    internal: true
