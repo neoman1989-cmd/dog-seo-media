@@ -1,0 +1,9 @@
+{
+  "month_jst": null,
+  "observed_at": null,
+  "rates_valid_until": null,
+  "exclusive_project": false,
+  "month_spend_jpy_upper_bound": null,
+  "usd_jpy_upper_bound": null,
+  "models": {}
+}
