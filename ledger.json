@@ -1,9 +1,37 @@
 {
   "version": 1,
-  "articles": {},
+  "articles": {
+    "2ddfb1b745f7d3dba384aa961da4f3f6d39257de71f3fb27cba32c904ef72b04": {
+      "article": {
+        "title": "犬の留守番用ペットカメラの選び方と比較",
+        "keyword": "犬 留守番 ペットカメラ 比較",
+        "content": "<p>広告：この記事にはアフィリエイトリンクを含む場合があります。</p>\n<p>これは検証用のサンプル記事です。商品情報は架空であり、購入判断には使用できません。</p>\n<h2>犬の留守番と見守りの基本</h2><p>カメラは日々の様子を確認する補助手段です。留守番時間や室温、飲み水、安全な居場所を確認し、犬の体調に合わせて環境を整えましょう。異変がある場合は獣医師へ相談してください。</p>\n<h2>選び方</h2><p>通知の設定、映像の見やすさ、音声機能、録画費用を確認します。自宅の通信環境や設置場所との適合性も重要です。利用前に、犬が機器や電源コードに触れない位置へ設置してください。</p>\n<h2>比較表</h2><table><caption>検証用サンプル商品の比較</caption><thead><tr><th>商品</th><th>機能</th><th>価格</th></tr></thead><tbody><tr><th>サンプル見守りカメラA</th><td>通知機能・双方向音声</td><td>公式サイトで確認</td></tr><tr><th>サンプル見守りカメラB</th><td>録画機能</td><td>公式サイトで確認</td></tr></tbody></table>\n<h2>購入前の確認</h2><p>価格やサービス内容は変更されます。公式の仕様、契約条件、保証、解約方法を確認してください。順位や効果を断定せず、必要な機能と総費用から選びましょう。</p>\n<h2>よくある質問</h2><h3>見守り機器だけで留守番は安心ですか？</h3><p>機器だけで安全を保証することはできません。犬に合った留守番の練習や環境づくりと併用してください。</p>\n<h2>出典</h2><ul><li><a href=\"https://example.com/demo-a\">サンプル見守りカメラA</a>（未検証）</li><li><a href=\"https://example.com/demo-b\">サンプル見守りカメラB</a>（未検証）</li></ul>",
+        "product_ids": [
+          "demo-camera-a",
+          "demo-camera-b"
+        ],
+        "sources": [
+          "https://example.com/demo-a",
+          "https://example.com/demo-b"
+        ],
+        "mode": "mock"
+      },
+      "generation_key": "a7dc548e96561eb20fe48a9b32c7170d41a3266478ace52583e637d66a9073fb",
+      "report": {
+        "passed": true,
+        "errors": [],
+        "warnings": [
+          "サンプル商品: demo-camera-a",
+          "サンプル商品: demo-camera-b",
+          "出典の実在・内容一致、商品仕様、価格、独自性は編集者による確認が必要"
+        ],
+        "human_review_required": true
+      }
+    }
+  },
   "requests": {},
   "posts": {},
   "generation_attempts": {
-    "a7dc548e96561eb20fe48a9b32c7170d41a3266478ace52583e637d66a9073fb": "pending"
+    "a7dc548e96561eb20fe48a9b32c7170d41a3266478ace52583e637d66a9073fb": "completed"
   }
 }
