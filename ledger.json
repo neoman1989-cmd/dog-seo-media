@@ -1,1 +1,9 @@
-{"version": 1, "articles": {}, "requests": {}, "posts": {}}
+{
+  "version": 1,
+  "articles": {},
+  "requests": {},
+  "posts": {},
+  "generation_attempts": {
+    "a7dc548e96561eb20fe48a9b32c7170d41a3266478ace52583e637d66a9073fb": "pending"
+  }
+}
